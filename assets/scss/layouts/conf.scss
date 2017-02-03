@@ -1,0 +1,224 @@
+.conf-section{
+  background: $grey-bckgr;
+  min-height: calc(100vh - 96px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.conf-start{
+  text-align: center;
+  h1{
+    font-size: 42px;
+    line-height: 46px;
+    font-family: $roboto;
+    font-weight: 400;
+    margin: 0;
+  }
+  p{
+    margin: 20px 0 32px;
+  }
+  button{
+    width: 178px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    &:hover{
+      i{
+        margin-left: 15px;
+      }
+    }
+
+    i{
+      font-size: 16px;
+      margin-left: 5px;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+.conf-modal{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 30;
+}
+
+.conf-modal-content{
+  text-align: center;
+  h2{
+    font-size: 42px;
+    line-height: 56px;
+    font-family: $roboto;
+    margin: 0;
+
+    span{
+      color: #5FC55F;
+    }
+  }
+  p{
+    margin: 20px 0 32px;
+  }
+  a{
+    font-family: $roboto;
+  }
+}
+
+.conf-modal-options{
+  display: flex;
+  justify-content: center;
+}
+
+.conf-modal-option{
+  margin: 0 40px;
+  cursor: pointer;
+
+  &:hover{
+    .conf-modal-img{
+      transform: scale(1.07);
+    }
+  }
+
+  p{
+    font-family: $roboto;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 26px;
+  }
+}
+
+.conf-modal-img{
+  width: 169px;
+  height: 169px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.c-m-big-img{
+  svg{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.c-m-i-small-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6e6e6;
+  border-radius: 100%;
+
+  h4{
+    font-size: 36px;
+    font-weight: 700;
+    color: $blue;
+  }
+}
+
+.conf-progress{
+  font-family: $roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #8E8E8E;
+  margin: 0;
+  position: absolute;
+  right: 4em;
+  bottom: 3em;
+}
+
+.close-conf-modal{
+  position: absolute;
+  top: 3em;;
+  right: 4em;
+  cursor: pointer;
+  color: #8E8E8E;
+  margin: 0;
+}
+
+.conf-modal-back{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 4em;
+  top: 3em;
+  color: $blue;
+  font-family: $roboto;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0;
+
+  &:hover{
+    i{
+      margin-right: 11px;
+    }
+  }
+
+  i{
+    margin-right: 5px;
+    transition: 0.3s ease-in-out;
+    font-size: 16px;
+  }
+}
+
+.conf-modal-result{
+  background: white;
+  padding: 50px;
+  min-width: 700px;
+  max-width: $max-width;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  a{
+    font-weight: bold;
+    margin: 10px 0 8px 0;
+  }
+  p{
+    max-width: 550px;
+    font-family: $roboto;
+  }
+}
+
+.green-button{
+  background: #5FC55F;
+  width: 227px;
+}
+
+.enter-mail-text{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 26px;
+  color: #8E8E8E;
+  margin-bottom: 16px !important;
+}
+
+.email-inputs{
+  display: flex;
+  width: 550px;
+
+  input{
+    width: 100%;
+    border: 1px solid #DFDFDF;
+    border-radius: 2px;
+    margin-right: 9px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #8E8E8E;
+    padding-left: 23px;
+  }
+  button{
+    min-width: 178px;
+  }
+}

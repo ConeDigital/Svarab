@@ -1,0 +1,37 @@
+.single-hero{
+  height: calc(100vh - 130px);
+}
+
+.single-content-section{
+  padding: 3em 4em;
+  display: flex;
+  justify-content: center;
+}
+
+.single-content{
+  max-width: $max-width;
+  color: $font-color;
+
+
+  h4{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 33px;
+  }
+  p{
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  li{
+    font-size: 16px;
+    line-height: 26px;
+    font-family: $merri;
+    font-weight: 300;
+  }
+
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
