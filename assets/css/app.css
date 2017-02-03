@@ -808,7 +808,8 @@ header {
     font-size: 42px;
     line-height: 56px;
     font-family: "Roboto", sans-serif;
-    margin: 0; }
+    margin: 0;
+    max-width: 550px; }
     .conf-modal-content h2 span {
       color: #5FC55F; }
   .conf-modal-content p {
@@ -974,3 +975,10 @@ header {
     padding-left: 23px; }
   .email-inputs button {
     min-width: 178px; }
+
+.conf-modal-book h2 {
+  text-align: left;
+  width: 550px; }
+
+.conf-modal-book p {
+  text-align: left; }
