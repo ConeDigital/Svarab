@@ -19,6 +19,9 @@
     <?php wp_head(); ?>
 </head>
 <body>
+    <div class="hidden" hidden>
+        <?php get_template_part( 'images/sprite.svg' ); ?>
+    </div>
     <?php $walker = new Menu_With_Description; ?>
     <header>
         <div class="header-logo">
