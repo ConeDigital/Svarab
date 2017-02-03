@@ -1,5 +1,5 @@
 jQuery(document).ready( function($) {
-    
+
     var solutions = [
         [0,0,0],
         [0,0,1],
@@ -15,7 +15,7 @@ jQuery(document).ready( function($) {
         [2,1,1],
     ];
 
-    var current = [null,null,null];
+    var choices = [null,null,null];
 
     var biop = [0, 4];
 
@@ -23,34 +23,96 @@ jQuery(document).ready( function($) {
 
     var both = [1,5];
 
-    $('.option').on('click', function() {
-        var siblings = $(this).siblings('.option');
-        siblings.prop('checked', false);
-        siblings.removeClass('checked');
-        $(this).addClass('checked')
-        if($(this).parent().data('id') != 500){
-            current[$(this).parent().data('id')] = $(this).data('id');
-        }
-        //console.log(current);
-        //alert( compareArrays(solutions, current));
+    var currentStep;
 
-        if ($.inArray(compareArrays(solutions, current), oxyfix) != -1){
-            console.log('Oxyfix');
-        }else if ($.inArray(compareArrays(solutions, current), biop) != -1){
-            console.log('Biop');
+    //Start button
+    $('.conf-start button').on('click', function(){
+        //Set current step to first step
+        currentStep = 1;
+        //Show modal
+        $('.conf-modal').attr('style', '');
+        //console.log(currentStep);
+    });
+
+    //On option click
+    $('.conf-modal-option').on('click', function(){
+        //Increment to next step
+        currentStep++;
+        //
+        var step = '#step' + currentStep;
+        //Hide all modal content
+        $('.conf-modal-content').attr('style', 'display: none;');
+        //Set progress field to current step
+        $('.conf-progress span').html(currentStep);
+
+        if ( $(this).hasClass('conf-choice') ) {
+            var position = $(this).parent('.conf-modal-options').data('id');
+            choices[position] = $(this).data('option');
+        }
+
+
+        var product;
+
+        if ($.inArray(compareArrays(solutions, choices), oxyfix) != -1){
+            product = 'Oxyfix';
+        }else if ($.inArray(compareArrays(solutions, choices), biop) != -1){
+            product = 'Biop';
         }
         else{
-            console.log('Both');
+            product = 'Oxyfix och Biop';
+        }
+
+        //Change product sugestion
+        $('.product-suggestion').html(product);
+
+        //Show current modal content
+        $(step).attr('style', '');
+
+    });
+
+    //Back button
+    $('.conf-modal-back').on('click', function(){
+        //Go back one step if not on first step
+        if(currentStep != 1){
+            currentStep--;
+            var step = '#step' + currentStep;
+            //Hide all modal content
+            $('.conf-modal-content').attr('style', 'display: none;');
+            //Update progress field to current step
+            $('.conf-progress span').html(currentStep);
+            //Show current modal content
+            $(step).attr('style', '');
+            //console.log(currentStep);
+        }else{
+            //If on first step hide modal
+            $('.conf-modal').attr('style', 'display: none;');
         }
 
     });
 
+    //Close button
+    $('.close-conf-modal').on('click', function(){
+        //Reset currentStep to 1
+        currentStep = 1;
+        //Hide modal
+        $('.conf-modal').attr('style', 'display: none;');
+        //Hide all modal contents
+        $('.conf-modal-content').attr('style', 'display: none;');
+        //Set progress field to 1
+        $('.conf-progress span').html(currentStep);
+        //Show step 1 when start button is clicked
+        var step = '#step' + currentStep;
+        $(step).attr('style', '');
+
+    });
+    
+
 });
 
-function compareArrays(solutions, current){
+function compareArrays(solutions, choices){
     for(var i = 0; i < solutions.length; i++) {
         for (var j = 0; j < 3; j++){
-            if(current[j] == solutions[i][j]) {
+            if(choices[j] == solutions[i][j]) {
                 if (j == 2){
                     return i;
                 }

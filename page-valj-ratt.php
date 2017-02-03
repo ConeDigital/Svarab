@@ -3,14 +3,14 @@
     <section class="conf-section">
         <div class="conf-start">
             <h1><?php the_title() ; ?></h1>
-            <p><?php the_field('hero-sub') ; ?></p>
+            <p><?php //the_field('hero-sub') ; ?></p>
             <button>Start<i class="material-icons">arrow_forward</i></button>
         </div>
     </section>
-    <div class="conf-modal">
+    <div class="conf-modal" style="display: none;">
         <p class="conf-modal-back"><i class="material-icons">keyboard_backspace</i> Tillbaka</p>
         <p class="close-conf-modal"><i class="material-icons ">close</i></p>
-        <div class="conf-modal-content">
+        <div class="conf-modal-content" id="step1">
             <h2>Typ av boende?</h2>
             <p>Vilket typ av hus du bor i spelar roll för denna uträkning</p>
             <div class="conf-modal-options">
@@ -367,23 +367,23 @@
                 </div>
             </div>
         </div>
-        <div class="conf-modal-content">
+        <div class="conf-modal-content" id="step2" style="display: none;">
             <h2>Antal hushåll?</h2>
             <p>Sharing is caring! (och bättre för plånboken)</p>
-            <div class="conf-modal-options">
-                <div class="conf-modal-option">
+            <div class="conf-modal-options" data-id="0">
+                <div class="conf-modal-option conf-choice" data-option="0">
                     <div class="conf-modal-img c-m-i-small-img">
                         <h4>1</h4>
                     </div>
                     <p>1 hushåll</p>
                 </div>
-                <div class="conf-modal-option">
+                <div class="conf-modal-option conf-choice" data-option="1">
                     <div class="conf-modal-img c-m-i-small-img">
                         <h4>2</h4>
                     </div>
                     <p>2 hushåll</p>
                 </div>
-                <div class="conf-modal-option">
+                <div class="conf-modal-option conf-choice" data-option="2">
                     <div class="conf-modal-img c-m-i-small-img">
                         <h4>3</h4>
                     </div>
@@ -391,11 +391,11 @@
                 </div>
             </div>
         </div>
-        <div class="conf-modal-content">
+        <div class="conf-modal-content" id="step3" style="display: none;">
             <h2>Skyddsnyvå?</h2>
             <p>Skyddsnivån spelar roll. Läs: <a href="#">Vilken skyddsnivå har jag?</a></p>
-            <div class="conf-modal-options">
-                <div class="conf-modal-option">
+            <div class="conf-modal-options" data-id="1">
+                <div class="conf-modal-option conf-choice" data-option="0">
                     <div class="conf-modal-img c-m-i-small-img">
                         <svg width="51px" height="47px" viewBox="0 0 51 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <title>warning</title>
@@ -420,7 +420,7 @@
                     </div>
                     <p>Hög skyddsnivå</p>
                 </div>
-                <div class="conf-modal-option">
+                <div class="conf-modal-option conf-choice" data-option="1">
                     <div class="conf-modal-img c-m-i-small-img">
                         <svg width="47px" height="47px" viewBox="0 0 47 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <title>emoticon-square-smiling-face-with-closed-eyes</title>
@@ -441,7 +441,7 @@
                     </div>
                     <p>Normal skyddsnivå</p>
                 </div>
-                <div class="conf-modal-option">
+                <div class="conf-modal-option conf-choice" data-option="2">
                     <div class="conf-modal-img c-m-i-small-img">
                         <svg width="47px" height="47px" viewBox="0 0 47 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <title>question</title>
@@ -466,11 +466,11 @@
                 </div>
             </div>
         </div>
-        <div class="conf-modal-content">
+        <div class="conf-modal-content" id="step4" style="display: none;">
             <h2>Godkänd slamavskiljare?</h2>
             <p>Finns det någon godkänd slamavskiljare. Lästips: <a href="#">Godkända slamavskiljare</a></p>
-            <div class="conf-modal-options">
-                <div class="conf-modal-option">
+            <div class="conf-modal-options" data-id="2">
+                <div class="conf-modal-option conf-choice" data-option="0">
                     <div class="conf-modal-img c-m-i-small-img">
                         <svg width="62px" height="47px" viewBox="0 0 62 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <title>correct-symbol</title>
@@ -491,7 +491,7 @@
                     </div>
                     <p>Ja</p>
                 </div>
-                <div class="conf-modal-option">
+                <div class="conf-modal-option conf-choice" data-option="1">
                     <div class="conf-modal-img c-m-i-small-img">
                         <svg width="47px" height="47px" viewBox="0 0 47 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <title>delete-cross</title>
@@ -512,7 +512,7 @@
                     </div>
                     <p>Nej</p>
                 </div>
-                <div class="conf-modal-option">
+                <div class="conf-modal-option conf-choice" data-option="2">
                     <div class="conf-modal-img c-m-i-small-img">
                         <svg width="47px" height="47px" viewBox="0 0 47 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <title>question</title>
@@ -537,10 +537,10 @@
                 </div>
             </div>
         </div>
-        <div class="conf-modal-content conf-modal-result">
+        <div class="conf-modal-content conf-modal-result" id="step5" style="display: none;">
             <h2>
                 I ditt hem passar..<br/>
-                systemet <span>Oxyfix</span>
+                systemet <span class="product-suggestion">Oxyfix</span>
             </h2>
             <a href="#">Läs mer om Oxyfix</a>
             <p>Boka en kostnadsfri konsultation med en av våra prominenta återförsäljare. Fyll i dina uppgifter nedan så kontaktar vi dig inom 24 timmar. </p>
@@ -551,11 +551,11 @@
                 <button>Ladda ner broschyr</button>
             </div>
         </div>
-        <div class="conf-modal-content conf-modal-result conf-modal-book">
+        <div class="conf-modal-content conf-modal-result conf-modal-book" style="display: none;">
             <h2>Kostnadsfri konsultation</h2>
             <p>Boka en kostnadsfri konsultation med en av våra prominenta återförsäljare. Fyll i dina uppgifter nedan så kontaktar vi dig inom 24 timmar. </p>
         </div>
-        <p class="conf-progress">1 / 5</p>
+        <p class="conf-progress"><span>1</span> / 5</p>
     </div>
 
 <?php get_footer() ; ?>
