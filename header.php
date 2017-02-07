@@ -22,6 +22,18 @@
     <div class="hidden" hidden>
         <?php get_template_part( 'images/sprite.svg' ); ?>
     </div>
+    <div class="dark-overlay"></div>
+    <div class="contact-menu">
+        <i class="material-icons close-c-menu">close</i>
+        <div class="contact-menu-content">
+            <a href="<?php echo esc_url(home_url('/offertforfragan'))?>">Offertförfrågan</a>
+            <a href="<?php echo esc_url(home_url('/aterforaljare'))?>">Återförsäljare</a>
+            <div class="contact-menu-info">
+                <a href="#"><i class="material-icons">local_phone</i> 010-141 88 66</a>
+                <a href="mailto:info@svarab.se"><i class="material-icons">email</i> info@svarab.se</a>
+            </div>
+        </div>
+    </div>
     <?php $walker = new Menu_With_Description; ?>
     <header>
         <div class="header-logo">

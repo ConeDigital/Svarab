@@ -1,0 +1,62 @@
+.section-sidebar{
+  display: flex;
+}
+
+.left-section{
+  padding: 3em 2em 3em 4em;
+  width: calc(66.6% - 6em);
+
+  p{
+    line-height: 26px;
+  }
+}
+
+.right-section{
+  padding: 3em;
+  width: calc(33.3% - 6em);
+  background: $grey-bckgr;
+  min-width: calc(420px - 6em);
+}
+
+.book-kommun{
+  width: calc(100% - 90px);
+  padding: 40px 45px;
+  background: $blue;
+
+  p{
+    margin: 0;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 34px;
+    color: #FFFFFF;
+    font-family: $roboto;
+  }
+  button{
+    width: 100%;
+    background: #5FC55F;
+    text-transform: uppercase;
+    margin-top: 16px;
+  }
+}
+
+.right-section-links{
+  margin-top: 60px;
+
+  h5{
+    font-size: 12px;
+    line-height: 18px;
+    color: #8e8e8e;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  a{
+    font-size: 16px;
+    line-height: 26px;
+    color: #212121;
+    width: 100%;
+    display: flex;
+    padding: 9px 0;
+    border-bottom: 1px solid #dfdfdf;
+  }
+
+}

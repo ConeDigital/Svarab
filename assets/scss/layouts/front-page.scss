@@ -1,0 +1,149 @@
+.front-hero{
+  align-items: flex-start;
+
+  h1{
+    text-align: left;
+    max-width: 800px;
+    margin-bottom: 18px;
+  }
+  p{
+    text-align: left;
+    max-width: 582px;
+    font-size: 22px;
+  }
+}
+
+.front-hero-inputs{
+  z-index: 1;
+  margin-top: 34px;
+}
+
+.front-second{
+  align-items: center;
+  min-height: 215px;
+
+  @include breakpoint(medium) {
+    flex-direction: column;
+  }
+
+  p{
+    font-family: $roboto;
+    line-height: 26px;
+  }
+
+  a{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+.front-second-content{
+  max-width: 800px;
+}
+
+.big-question{
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+
+  @include breakpoint(desktop) {
+    max-width: 300px;
+  }
+
+  @include breakpoint(medium) {
+    max-width: 100%;
+    margin-top: 2.5em;
+    justify-content: flex-start;
+  }
+
+  a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  svg{
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover{
+    svg{
+      transform: scale(1.07) rotate(45deg);
+    }
+  }
+}
+
+.front-third{
+  display: flex;
+}
+
+.front-third-left{
+  width: 50%;
+
+  @include breakpoint(laptop) {
+    display: none;
+  }
+}
+.front-third-right{
+  padding: 4em;
+  width: calc(50% - 8em);
+  background: $blue;
+
+  @include breakpoint(desktop) {
+    padding: 3em 2em;
+    width: calc(50% - 4em);
+  }
+  @include breakpoint(laptop) {
+    width: calc(100% - 4em);
+  }
+  @include breakpoint(mobile) {
+    width: calc(100% - 2em);
+    padding: 2.5em 1em;
+  }
+
+  h3{
+    color: white;
+  }
+  p{
+    color: white;
+    font-family: $roboto;
+    display: flex;
+    align-items: flex-start;
+    max-width: 440px;
+    line-height: 26px;
+    @include breakpoint(laptop) {
+      max-width: 100%;
+    }
+
+    i{
+      color: #90DFAA;
+      margin-right: 29px;
+
+      @include breakpoint(mobile) {
+        margin-right: 10px;
+      }
+    }
+  }
+  button{
+    color: $blue;
+    background: white;
+    position: relative;
+    width: 178px;
+    font-weight: bold;
+    margin-top: 26px;
+
+    a{
+      position: absolute;
+      left: 0;
+      top:0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

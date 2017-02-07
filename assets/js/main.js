@@ -49,4 +49,14 @@ jQuery(document).ready( function($) {
         $(this).siblings('.answer').slideToggle('fast');
         $(this).children('.material-icons').toggleClass('rotate');
     });
+
+    $('.header-button').on('click', function(event) {
+        event.preventDefault();
+        $('.dark-overlay').fadeIn('fast');
+        $('.contact-menu').css("transform", "translateX(100%)" );
+    });
+    $('.dark-overlay, .close-c-menu').on('click', function() {
+        $('.dark-overlay').fadeOut('fast');
+        $('.contact-menu').css("transform", "translateX(200%)" );
+    });
 });

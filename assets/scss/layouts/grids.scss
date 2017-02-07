@@ -3,21 +3,28 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background: white;
+  z-index: 1;
+  position: relative;
 
   @include breakpoint(xl) {
     padding: 3.5em 3.5em 3.5em 4em;
   }
 
-  @include breakpoint(large) {
+  @include breakpoint(desktop) {
     padding: 3.5em 1em 3.5em 2em;
   }
 
   @include breakpoint(small) {
+    padding: 3.5em 2em 3.5em 2em;
+  }
+
+  @include breakpoint(mobile) {
     padding: 3em 1em;
   }
 
   .related-headline{
-    margin-bottom: 40px;
+    margin-bottom: 5px;
     font-size: 16px;
     font-weight: 500;
     text-align: center;
@@ -33,6 +40,7 @@
 .related-post-wrapper{
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
 
   @include breakpoint(desktop) {
     flex-wrap: wrap;
@@ -43,6 +51,7 @@
   width: calc(25% - 2.8em);
   margin-right: 2.8em;
   position: relative;
+  margin-top: 35px;
 
   @include breakpoint(xl) {
     width: calc(25% - 1.5em);
@@ -112,6 +121,7 @@
     font-size: 14px;
     line-height: 19px;
     color: #8E8E8E;
+    margin: 0;
   }
 
   button{
@@ -131,4 +141,67 @@
     margin-top: 40px;
     visibility: hidden;
   }
+}
+
+.staff-grid-section{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  width: calc(100% + 40px);
+
+  @include breakpoint(laptop) {
+    width: calc(100% + 20px);
+  }
+
+  @include breakpoint(medium) {
+    width: calc(100%);
+  }
+
+  h3{
+    width: 100%;
+  }
+}
+
+.staff-grid{
+  display: flex;
+  margin-top: 40px;
+  width: calc(50% - 40px);
+  margin-right: 40px;
+  align-items: center;
+  margin-bottom: 10px;
+
+  @include breakpoint(medium) {
+    width: calc(100%);
+    margin-right: 0;
+  }
+
+  h4{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 33px;
+    color: #212121;
+    margin: 0;
+  }
+  p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 21px;
+    color: #8E8E8E;
+    font-family: $roboto;
+    margin-bottom: 13px;
+  }
+  a{
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+  }
+}
+
+.staff-img{
+  width: 130px;
+  height: 130px;
+  min-width: 130px;
+  border-radius: 100%;
+  margin-right: 30px;
 }

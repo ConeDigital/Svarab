@@ -3,7 +3,7 @@
     <section class="conf-section">
         <div class="conf-start">
             <h1><?php the_title() ; ?></h1>
-            <p><?php //the_field('hero-sub') ; ?></p>
+            <p><?php the_field('hero-sub') ; ?></p>
             <button>Start<i class="material-icons">arrow_forward</i></button>
         </div>
     </section>
@@ -58,7 +58,7 @@
         </div>
         <div class="conf-modal-content" id="step3" style="display: none;">
             <h2>Skyddsnyvå?</h2>
-            <p>Skyddsnivån spelar roll. Läs: <a href="#">Vilken skyddsnivå har jag?</a></p>
+            <p>Skyddsnivån spelar roll. Läs: <a target="_blank" href="<?php echo esc_url(home_url('/guides/vilken-skyddsniva-har-jag/')); ?>">Vilken skyddsnivå har jag?</a></p>
             <div class="conf-modal-options" data-id="1">
                 <div class="conf-modal-option conf-choice" data-option="0">
                     <div class="conf-modal-img c-m-i-small-img">
@@ -133,6 +133,7 @@
         <div class="conf-modal-content conf-modal-result conf-modal-book" style="display: none;">
             <h2>Kostnadsfri konsultation</h2>
             <p>Boka en kostnadsfri konsultation med en av våra prominenta återförsäljare. Fyll i dina uppgifter nedan så kontaktar vi dig inom 24 timmar. </p>
+
         </div>
         <p class="conf-progress"><span>1</span> / 5</p>
     </div>
