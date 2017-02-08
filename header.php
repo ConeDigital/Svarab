@@ -46,5 +46,13 @@
         <div class="header-button">
             <a href="#">Kontakta oss</a>
         </div>
+        <button class="hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+        </button>
     </header>
+    <div class="menu-section">
+        <?php wp_nav_menu( array( 'theme_location' => 'mobile', 'menu_class' => 'mobile-menu' ) ); ?>
+    </div>
     <div class="all-content">

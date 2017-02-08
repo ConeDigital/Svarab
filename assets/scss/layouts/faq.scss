@@ -2,6 +2,14 @@
   background: $grey-bckgr;
   padding: 3em 4em;
 
+  @include breakpoint(desktop) {
+    padding: 3em 2em;
+  }
+
+  @include breakpoint(mobile) {
+    padding: 2.5em 1em;
+  }
+
   p{
     font-family: $roboto;
   }
@@ -39,6 +47,10 @@
   justify-content: space-between;
   padding-top: 4em;
   flex-wrap: wrap;
+  @include breakpoint(medium) {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .faq-grid{
@@ -46,6 +58,12 @@
   margin-right: 2em;
   max-width: 550px;
   margin-bottom: 2em;
+
+  @include breakpoint(medium) {
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0;
+  }
 
   h4{
     margin: 0;
@@ -67,6 +85,7 @@
     margin-right: 12px;
     font-size: 20px;
     transition: transform 0.2s ease-in-out;
+    max-height: 20px;
   }
 }
 

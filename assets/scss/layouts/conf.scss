@@ -40,7 +40,7 @@
   }
 }
 .conf-modal{
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
@@ -50,10 +50,21 @@
   justify-content: center;
   align-items: center;
   z-index: 30;
+
+  @include breakpoint(desktop) {
+    width: calc(100% - 4em);
+    padding: 0 2em;
+  }
+  @include breakpoint(mobile) {
+    width: calc(100% - 2em);
+    padding: 0 1em;
+  }
 }
 
 .conf-modal-content{
   text-align: center;
+  max-width: 100%;
+
   h2{
     font-size: 42px;
     line-height: 56px;
@@ -80,6 +91,16 @@
 .conf-modal-option{
   margin: 0 40px;
   cursor: pointer;
+  DISPLAY: FLEX;
+  FLEX-DIRECTION: COLUMN;
+  ALIGN-ITEMS: CENTER;
+
+  @include breakpoint(tablet) {
+    margin: 0 20px;
+  }
+  @include breakpoint(mobile) {
+    margin: 0 14px;
+  }
 
   &:hover{
     .conf-modal-img{
@@ -101,6 +122,15 @@
   height: 169px;
   position: relative;
   transition: transform 0.3s ease-in-out;
+
+  @include breakpoint(medium) {
+    width: 120px;
+    height: 120px;
+  }
+  @include breakpoint(mobile) {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .c-m-big-img{
@@ -134,6 +164,15 @@
   position: absolute;
   right: 4em;
   bottom: 3em;
+
+  @include breakpoint(desktop) {
+    right: 2em;
+    bottom: 2em;
+  }
+  @include breakpoint(mobile) {
+    right: 1em;
+    bottom: 1em;
+  }
 }
 
 .close-conf-modal{
@@ -143,6 +182,15 @@
   cursor: pointer;
   color: #8E8E8E;
   margin: 0;
+
+  @include breakpoint(desktop) {
+    right: 2em;
+    top: 2em;
+  }
+  @include breakpoint(mobile) {
+    right: 1em;
+    top: 1em;
+  }
 }
 
 .conf-modal-back{
@@ -157,6 +205,15 @@
   cursor: pointer;
   font-weight: bold;
   margin: 0;
+
+  @include breakpoint(desktop) {
+    left: 2em;
+    top: 2em;
+  }
+  @include breakpoint(mobile) {
+    left: 1em;
+    top: 1em;
+  }
 
   &:hover{
     i{
@@ -179,6 +236,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include breakpoint(laptop) {
+    max-width: 100%;
+    min-width: 0;
+  }
+  @include breakpoint(medium) {
+    height: 100%;
+    justify-content: center;
+    padding: 0 2em;
+    width: calc(100% );
+    min-width: calc(100%);
+  }
+  @include breakpoint(mobile) {
+    padding: 0 1em;
+    width: calc(100%);
+    min-width: calc(100%);
+  }
 
   a{
     font-weight: bold;
@@ -208,11 +282,18 @@
   display: flex;
   width: 550px;
 
+  @include breakpoint(small) {
+    width: 100%;
+  }
+
   input{
     width: 100%;
   }
   button{
     min-width: 178px;
+    @include breakpoint(small) {
+      min-width: 140px;
+    }
   }
 }
 

@@ -11,6 +11,7 @@
     <p><?php the_field('hero-sub') ; ?></p>
 </div>
 <div class="sub-pages-menu">
+    <i class="material-icons scroll-icon">keyboard_arrow_right</i>
     <div class="blur-menu"></div>
     <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'under-menu' ) ); ?>
 </div>
@@ -35,7 +36,10 @@
             <?php endif; ?>
             </div>
         <?php elseif(is_page( 'aterforsaljare' )) : ?>
-            Återförsäljare
+            <input class="big-search" type="search" placeholder="Sök efter kommun" />
+            <div class="retail-grid">
+            
+            </div>
         <?php elseif(is_page( 'garantiregistrering' )) : ?>
             <form>
                 <div class="input-div radios">

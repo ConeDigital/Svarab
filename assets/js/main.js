@@ -2,6 +2,54 @@
 
 jQuery(document).ready( function($) {
 
+    //Open and close mobile menu
+    $('.hamburger').on('click', function(){
+        closeOpen($(this));
+    });
+    $('.closeHamburger').on('click', function(){
+        closeOpen($(this));
+    });
+    function closeOpen (a){
+
+        if(a.hasClass('is-active')){
+            $(".menu-section").removeClass('visible-menu');
+            a.removeClass('is-active');
+            $("html, body").css({
+                height: 'auto',
+                overflow: 'visible'
+            });
+            $('.hamburger').removeClass('is-active');
+
+        }
+        else{
+            a.addClass('is-active');
+            $(".menu-section").addClass('visible-menu');
+            $("html, body").css({
+                height: '100%',
+                overflow: 'hidden',
+                position: 'relative'
+            });
+            $('.closeHamburger').addClass('is-active');
+
+        }
+    }
+    $('.menu-item-has-children').on('click', function (e) {
+        if ($(window).width() < 900){
+            var pWidth = $(this).innerWidth();
+            var pOffset = $(this).offset();
+            var x = e.pageX - pOffset.left;
+            if(pWidth - 50 > x) {
+                //$(this).text('left');
+                //alert('left');
+            }
+            else {
+                //alert('right');
+                e.preventDefault();
+                $(this).toggleClass('sub-open');
+            }
+        }
+
+    });
 
     // Hide Header on on scroll down
     var didScroll;

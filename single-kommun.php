@@ -9,6 +9,7 @@
         <div class="left-section">
             <?php the_content() ; ?>
             <h3>Återförsäljare av enskilt avlopp i <?php the_field('kommun-name') ; ?> kommun:</h3>
+
         </div>
         <div class="right-section">
             <div class="book-kommun">

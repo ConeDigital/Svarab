@@ -166,6 +166,8 @@ header{
     padding: 8px 2em;
     width: calc(100% - 4em);
     height: 44px;
+    border-bottom: 1px solid #dfdfdf;
+    box-shadow: none;
   }
   @include breakpoint(mobile) {
     padding: 8px 1em;
@@ -283,6 +285,10 @@ header{
   justify-content: flex-end;
   align-items: center;
 
+  @include breakpoint(laptop) {
+    display: none;
+  }
+
   a{
     width: 167px;
     height: 40px;
@@ -310,5 +316,155 @@ header{
 
   @include breakpoint(laptop) {
     margin-top: 60px;
+  }
+}
+
+/*--------------------------------------------
+
+  Hamburger styling
+
+---------------------------------------------*/
+
+.hamburger{
+  display: none;
+  padding: 0;
+  outline: none;
+
+  @include breakpoint(laptop) {
+    display: block;
+  }
+}
+
+.hamburger-box{
+  width: 23px;
+}
+
+.hamburger-inner{
+  margin-top: 3px;
+}
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
+  width: 23px;
+  height: 2px;
+  border-radius: 0;
+  background-color: #8e8e8e;
+}
+
+.hamburger-inner:after {
+  bottom: -5px;
+}
+
+.hamburger-inner:before {
+  top: -5px;
+}
+
+/*--------------------------------------------
+
+MOBILE MENU STYLING
+
+---------------------------------------------*/
+
+.menu-section{
+  padding: 0;
+  width: 100%;
+  display: none;
+  position: fixed;
+  top: 61px;
+  left: 0;
+  z-index: 20;
+  height: calc(100vh - 60px);
+  background: white;
+}
+.visible-menu{
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+
+  @include breakpoint(laptop) {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    flex-direction: column;
+  }
+}
+
+.mobile-menu{
+  padding: 0;
+  list-style: none;
+  margin: 0;
+
+  li{
+    border-bottom: 1px solid #dfdfdf;
+  }
+  a{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+    color: #8e8e8e;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+    line-height: 1;
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 2;
+    padding: 17px 2em;
+
+    @include breakpoint(mobile) {
+      padding: 17px 1em;
+    }
+  }
+
+  .menu-item-has-children{
+    position: relative;
+  }
+
+  .menu-item-has-children:before {
+    content: 'add';
+    position: absolute;
+    font-family: 'Material Icons';
+    right: 0;
+    top: 0;
+    color: #8e8e8e;
+    height: calc(100% - 12px);
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-left: 1px solid #dfdfdf;
+    font-size: 30px;
+    padding-top: 12px;
+    cursor: pointer;
+  }
+
+  .sub-menu{
+    display: none;
+    padding: 0;
+    list-style: none;
+
+    li{
+      border: none;
+      padding: 0 2em;
+      @include breakpoint(mobile) {
+        padding: 0 1em;
+      }
+    }
+    a{
+      text-transform: none;
+      padding: 0 0 17px 0;
+    }
+  }
+  .sub-open{
+    background: #dfdfdf;
+    ul{
+      display: block;
+    }
+
+    &:before {
+      content: 'close';
+    }
   }
 }

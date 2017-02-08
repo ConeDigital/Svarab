@@ -1,10 +1,24 @@
 .section-sidebar{
   display: flex;
+
+  @include breakpoint(laptop) {
+    flex-direction: column;
+  }
 }
 
 .left-section{
   padding: 3em 2em 3em 4em;
   width: calc(66.6% - 6em);
+
+  @include breakpoint(desktop) {
+    padding: 3em 2em 3em 2em;
+    width: calc(66.6% - 4em);
+  }
+
+  @include breakpoint(laptop) {
+    width: calc(100% - 4em);
+    padding: 3em 2em;
+  }
 
   p{
     line-height: 26px;
@@ -16,12 +30,39 @@
   width: calc(33.3% - 6em);
   background: $grey-bckgr;
   min-width: calc(420px - 6em);
+
+  @include breakpoint(laptop) {
+    width: calc(100% - 4em);
+    padding: 3em 2em;
+    display: flex;
+  }
+  @include breakpoint(tablet) {
+    flex-direction: column;
+  }
+  @include breakpoint(mobile) {
+    width: calc(100% - 2em);
+    padding: 1em 1em 2.5em 1em;
+  }
 }
 
 .book-kommun{
   width: calc(100% - 90px);
   padding: 40px 45px;
   background: $blue;
+
+  @include breakpoint(laptop) {
+    margin-right: 40px;
+  }
+  @include breakpoint(medium) {
+    padding: 40px 2em;
+    width: calc(100% - 4em);
+  }
+  @include breakpoint(tablet) {
+    max-width: 300px;
+  }
+  @include breakpoint(mobile) {
+    max-width: 100%;
+  }
 
   p{
     margin: 0;
@@ -41,6 +82,14 @@
 
 .right-section-links{
   margin-top: 60px;
+
+  @include breakpoint(laptop) {
+    margin-top: 0;
+    min-width: 300px;
+  }
+  @include breakpoint(tablet) {
+    margin-top: 40px;
+  }
 
   h5{
     font-size: 12px;

@@ -2,9 +2,14 @@ footer{
   display: flex;
   padding: 3em 4em;
   flex-direction: column;
+  background: white;
+  position: relative;
 
   @include breakpoint(desktop) {
     padding: 3em 2em;
+  }
+  @include breakpoint(mobile) {
+    padding: 2.5em 1em;
   }
 
   p{
@@ -86,6 +91,11 @@ footer{
   margin-top: 10px;
   left: -30px;
   margin-bottom: 13px;
+
+  @include breakpoint(medium) {
+    width: 100%;
+    left: 0;
+  }
 }
 
 .footer-lower-section{
@@ -109,6 +119,12 @@ footer{
   .footer-icon{
     position: relative;
     margin-right: 23px;
+
+    @include breakpoint(mobile) {
+      margin-right: 0;
+      margin-left: 18px;
+    }
+
     &:hover{
       svg{
         filter: grayscale(0);
