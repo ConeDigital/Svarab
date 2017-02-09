@@ -19,6 +19,10 @@
     width: calc(100% - 4em);
     padding: 3em 2em;
   }
+  @include breakpoint(mobile) {
+    width: calc(100% - 2em);
+    padding: 2.5em 1em;
+  }
 
   p{
     line-height: 26px;

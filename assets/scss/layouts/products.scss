@@ -1,0 +1,54 @@
+.product-single-section{
+  flex-direction: column;
+  align-items: center;
+}
+
+.no-touch #cd-vertical-nav {
+  /*fix the navigation*/
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+
+.no-touch #cd-vertical-nav a span {
+  float: right;
+  /*scale down navigation dots and labels*/
+  transform: scale(0.6);
+}
+
+.no-touch #cd-vertical-nav .cd-dot {
+  transform-origin: 50% 50%;
+}
+
+.no-touch #cd-vertical-nav .cd-label {
+  transform-origin: 100% 50%;
+}
+
+.no-touch #vertical-nav a:hover span {
+  /*scale up navigation dots and labels*/
+  transform: scale(1);
+}
+
+.no-touch #cd-vertical-nav a:hover .cd-label {
+  /*show labels*/
+  opacity: 1;
+}
+
+
+.touch #cd-vertical-nav {
+  position: fixed;
+  z-index: 1;
+  right: 5%;
+  bottom: 30px;
+  width: 90%;
+  max-width: 400px;
+  max-height: 90%;
+  transform: scale(0);
+  transition-property: transform;
+  transition-duration: 0.2s;
+}
+.touch #cd-vertical-nav.open {
+  transform: scale(1);
+}

@@ -37,8 +37,35 @@
             </div>
         <?php elseif(is_page( 'aterforsaljare' )) : ?>
             <input class="big-search" type="search" placeholder="Sök efter kommun" />
-            <div class="retail-grid">
-            
+            <div class="retail-categories">
+                <?php wp_list_categories( array(
+                    'orderby'    => 'name',
+                    'exclude'  => array( 1 ),
+                    'title_li' => ''
+                ) ); ?>
+            </div>
+            <div hidden><?php $kommun == the_field('kommun-name') ; ?></div>
+            <div class="retailer-grid-section less-margin">
+                <?php $loop = new WP_Query( array( 'post_type' => 'retailers', 'category_name' => $kommun ) ); ?>
+                <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                    <div class="retailer-grid">
+                        <h4><?php the_title() ; ?></h4>
+                        <p>
+                            <?php the_field('retailer-number') ?>
+                            <?php if( get_field('retailer-address') ): ?>
+                                <span>, <?php the_field('retailer-address'); ?></span>
+                            <?php endif; ?>
+                        </p>
+                        <div class="retailer-contact">
+                            <p>
+                                <?php foreach((get_the_category()) as $category) {
+                                    echo $category->cat_name . ' ';
+                                } ?>
+                            </p>
+                            <a href="#">Kontakta</a>
+                        </div>
+                    </div>
+                <?php endwhile; ?>
             </div>
         <?php elseif(is_page( 'garantiregistrering' )) : ?>
             <form>
