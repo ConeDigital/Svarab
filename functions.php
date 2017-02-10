@@ -150,6 +150,10 @@ function cone_enqueue_scripts() {
 
     wp_enqueue_script( 'modernizr-scripts', get_template_directory_uri() . '/assets/js/lib/modernizr.js', array('jquery'), 1.0, true );
 
+    wp_enqueue_style( 'slider-style', get_template_directory_uri() . '/assets/css/lib/slider.css' );
+
+    wp_enqueue_script( 'slider-scripts', get_template_directory_uri() . '/assets/js/lib/slider.js', array('jquery'), 1.0, true );
+
 
     // vendor.css created with gulp
     wp_enqueue_style( 'main-min-style', get_template_directory_uri() . '/assets/css/main.min.css' );

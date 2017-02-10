@@ -1,29 +1,140 @@
+.hero-product{
+  h1{
+    max-width: 100%;
+  }
+}
+
+.product-section{
+  display: flex;
+  padding: 4em;
+
+  @include breakpoint(desktop) {
+    padding: 3em 2em;
+  }
+  @include breakpoint(medium) {
+    flex-direction: column;
+  }
+  @include breakpoint(mobile) {
+    padding: 2.5em 1em;
+  }
+}
+
+.product-grid{
+  position: relative;
+
+  @include breakpoint(medium) {
+    margin-bottom: 40px;
+  }
+
+  &:first-child{
+    margin-right: 45px;
+
+    @include breakpoint(medium) {
+      margin-right: 0;
+    }
+  }
+
+  p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #212121;
+    font-family: $roboto;
+  }
+  a{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+.product-perks{
+  margin-bottom: 30px;
+
+  p{
+    display: flex;
+    align-items: flex-start;
+  }
+  i{
+    margin-right: 20px;
+    font-size: 18px;
+    color: $blue;
+    line-height: 26px;
+
+  }
+}
 .product-single-section{
   flex-direction: column;
   align-items: center;
 }
 
+.pdf {
+  width: 100%;
+
+  a{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  i{
+    font-size: 20px;
+    margin-right: 12px;
+  }
+}
+
+.product-link{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+
 .no-touch #cd-vertical-nav {
   /*fix the navigation*/
   position: fixed;
-  right: 40px;
+  right: 4em;
   top: 50%;
   bottom: auto;
   transform: translateY(-50%);
+  z-index: 10;
+
+  ul{
+    list-style: none;
+  }
 }
 
 .no-touch #cd-vertical-nav a span {
   float: right;
   /*scale down navigation dots and labels*/
-  transform: scale(0.6);
+  transform: scale(1);
+
+  &:hover{
+    transform: scale(1.2);
+  }
 }
 
 .no-touch #cd-vertical-nav .cd-dot {
   transform-origin: 50% 50%;
+  top: 10px;
+  background-color: $blue;
+  width: 8px;
+  height: 8px;
+}
+
+.no-touch #cd-vertical-nav a.is-selected .cd-dot {
+  background-color: #212121;
+}
+
+.no-touch #cd-vertical-nav a.is-selected .cd-label {
+  color: $blue;
 }
 
 .no-touch #cd-vertical-nav .cd-label {
   transform-origin: 100% 50%;
+  font-size: 14px;
+  color: #8e8e8e;
+  //opacity: 1;
+  margin-right: 0;
 }
 
 .no-touch #vertical-nav a:hover span {

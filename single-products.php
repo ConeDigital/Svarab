@@ -21,6 +21,12 @@
                 <span class="cd-label">Produktblad</span>
             </a>
         </li>
+        <li>
+            <a href="#section4" class="black-dot" data-number="4">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Intresseförfrågan</span>
+            </a>
+        </li>
         <!-- other navigation items here-->
     </ul>
 </nav>
@@ -36,7 +42,18 @@
     <div id="section2" class="single-content cd-section ">
         <?php the_field('product-maintenance') ; ?>
     </div>
+    <div id="section3" class="single-content cd-section pdf">
+        <h3>Produktblad</h3>
+        <?php if( have_rows('product-pdfs') ): ?>
+            <?php while( have_rows('product-pdfs') ) : the_row(); remove_filter('acf_the_content', 'wpautop'); ?>
+                <a target="_blank" href="<?php the_sub_field('product-pdf') ; ?>"><i class="material-icons">file_download</i><?php the_sub_field('pdf-title') ; ?></a>
+            <?php endwhile; ?>
+        <?php endif; ?>
+    </div>
 </section>
+<div id="section4" class="cd-section">
+    <?php get_template_part( 'template-parts/single-form', get_post_format() ); ?>
+</div>
 
 
 
