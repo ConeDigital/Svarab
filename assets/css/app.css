@@ -1249,8 +1249,7 @@ MOBILE MENU STYLING
   display: flex;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  margin-top: 30px; }
+          flex-wrap: wrap; }
   .retail-categories li {
     list-style: none;
     padding: 5px;

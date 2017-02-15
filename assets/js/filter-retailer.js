@@ -3,12 +3,17 @@ jQuery(document).ready( function($) {
      * Filter retailers
      */
     var kommun;
-    $('.cat-item a').on('click', function () {
+    $('.cat-item').on('click', function () {
         event.preventDefault();
+        //Remove active color from all items
+        $('.cat-item').css('background', '#8e8e8e');
+        //Add active color to clicked items
+        $(this).css('background', '#5091BD');
+
         //If same kommun is clicked do nothing
-        if(kommun != $(this).html()){
+        if(kommun != $(this).find('a').html()){
             //else set variable to clicked kommun
-            kommun = $(this).html();
+            kommun = $(this).find('a').html();
             //If Alla isnt clicked
             if ( kommun != 'Alla' ){
                 //Hide all results and then fadeIn matched results

@@ -38,7 +38,7 @@
         <?php elseif(is_page( 'aterforsaljare' )) : ?>
 <!--             <input class="big-search" type="search" placeholder="Sök efter kommun" /> -->
             <div class="retail-categories">
-                <li class="cat-item">
+                <li class="cat-item" style="background: #5091BD">
                     <a href="#">Alla</a>
                 </li>
                 <?php wp_list_categories( array(
