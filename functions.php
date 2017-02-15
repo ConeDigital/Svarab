@@ -160,6 +160,12 @@ function cone_enqueue_scripts() {
 
     // vendor.js created with gulp
     wp_enqueue_script( 'main-min-scripts', get_template_directory_uri() . '/assets/js/src/main.min.js', array('jquery'), 1.0, true );
+
+    wp_localize_script(
+      'main-min-scripts', // this needs to match the name of our enqueued script
+      'ajaxApi',      // the name of the object
+      array('ajaxurl' => admin_url('admin-ajax.php')) // the property/value
+    );
 }
 add_action( 'wp_enqueue_scripts', 'cone_enqueue_scripts' );
 
@@ -215,5 +221,41 @@ class Menu_With_Description extends Walker_Nav_Menu {
   }
 
   add_action( 'wp_head', 'elp_typekit_inline' );
+
+
+  function api_upsales_ajax() {
+
+    
+    $apikey = '8609b099b7c6b1a8b8035a156416d2cb5dbb2174cf5609ad463ab95672218cee';
+
+    $url = 'https://integration.upsales.com/api/v2/contacts/?token=' . $apikey;
+
+    $contactInfo = array(
+      'name' => $_POST['name'],
+      'phone' => '',
+      'cellPhone' => $_POST['phone'],
+      'email' => $_POST['email'],
+      'title' => '',
+      'notes' => $_POST['notes'],
+      'client' => 2,
+      'active' => true,
+    );
+
+    $response = wp_remote_post( $url, array(
+        'headers' => array(
+            'Content-Type' => 'application/json',
+            'Accept-Encoding' => 'utf-8'
+        ),
+        'body' => json_encode($contactInfo)
+    ) );
+
+
+    wp_send_json($response);
+
+}
+
+add_action( 'wp_ajax_api_upsales_ajax', 'api_upsales_ajax' );
+
+add_action( 'wp_ajax_nopriv_api_upsales_ajax', 'api_upsales_ajax' );
 
 ?>

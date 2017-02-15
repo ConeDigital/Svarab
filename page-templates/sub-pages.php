@@ -103,11 +103,11 @@
                     <label for="oxifyx">Oxifyx</label>
                 </div>
                 <div class="input-div">
-                    <input class="inputs" type="text" placeholder="Namn"/>
-                    <input class="inputs" type="email" placeholder="Email adress" />
+                    <input class="inputs offer-name" type="text" placeholder="Namn"/>
+                    <input class="inputs offer-email" type="email" placeholder="Email adress" />
                 </div>
                 <div class="input-div">
-                    <input class="inputs" type="number" placeholder="Telefonnummer"/>
+                    <input class="inputs offer-phone" type="number" placeholder="Telefonnummer"/>
                 </div>
                 <div class="input-div">
                     <input class="inputs" type="text" placeholder="Adress"/>
@@ -117,9 +117,9 @@
                     <input class="inputs" type="text" placeholder="Kommun"/>
                 </div>
                 <div class="input-div">
-                    <textarea class="inputs" placeholder="Övrig information"></textarea>
+                    <textarea class="inputs offer-notes" placeholder="Övrig information"></textarea>
                 </div>
-                <button>Skicka</button>
+                <button class="offer-form-submit">Skicka</button>
             </form>
         <?php endif ; ?>
     </div>

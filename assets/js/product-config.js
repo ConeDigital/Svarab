@@ -30,7 +30,7 @@ jQuery(document).ready( function($) {
         //Set current step to first step
         currentStep = 1;
         //Show modal
-        $('.conf-modal').attr('style', '');
+        $('.conf-modal').fadeIn('slow');//attr('style', '');
         //console.log(currentStep);
     });
 
@@ -66,7 +66,7 @@ jQuery(document).ready( function($) {
         $('.product-suggestion').html(product);
 
         //Show current modal content
-        $(step).attr('style', '');
+        $(step).fadeIn('slow');//attr('style', '');
 
     });
 
@@ -81,7 +81,7 @@ jQuery(document).ready( function($) {
             //Update progress field to current step
             $('.conf-progress span').html(currentStep);
             //Show current modal content
-            $(step).attr('style', '');
+            $(step).fadeIn('slow');//attr('style', '');
             //console.log(currentStep);
         }else{
             //If on first step hide modal
