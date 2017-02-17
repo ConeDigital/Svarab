@@ -71,32 +71,33 @@
                 <?php endwhile; ?>
             </div>
         <?php elseif(is_page( 'garantiregistrering' )) : ?>
-            <form>
-                <div class="input-div radios">
-                    <input type="radio" name="product" value="biop"  id="Biop">
-                    <label for="Biop">Biop</label>
-                    <input type="radio" name="product" value="oxifyx" id="oxifyx">
-                    <label for="oxifyx">Oxifyx</label>
-                </div>
-                <div class="input-div">
-                    <input class="inputs" type="text" placeholder="Namn"/>
-                    <input class="inputs" type="email" placeholder="Email adress" />
-                </div>
-                <div class="input-div">
-                    <input class="inputs" type="number" placeholder="Telefonnummer"/>
-                </div>
-                <div class="input-div">
-                    <input class="inputs" type="text" placeholder="Adress"/>
-                </div>
-                <div class="input-div">
-                    <input class="inputs small-input" type="number" placeholder="Postnummer"/>
-                    <input class="inputs" type="text" placeholder="Kommun"/>
-                </div>
-                <div class="input-div">
-                    <input class="inputs" type="text" onfocus="(this.type='date')"  placeholder="Välj datum för driftkostnad"/>
-                </div>
-                <button>Skicka</button>
-            </form>
+            <div class="forms">
+<!--                <div class="input-div radios">-->
+<!--                    <input type="radio" name="product" value="biop"  id="Biop">-->
+<!--                    <label for="Biop">Biop</label>-->
+<!--                    <input type="radio" name="product" value="oxifyx" id="oxifyx">-->
+<!--                    <label for="oxifyx">Oxifyx</label>-->
+<!--                </div>-->
+<!--                <div class="input-div">-->
+<!--                    <input class="inputs" type="text" placeholder="Namn"/>-->
+<!--                    <input class="inputs" type="email" placeholder="Email adress" />-->
+<!--                </div>-->
+<!--                <div class="input-div">-->
+<!--                    <input class="inputs" type="number" placeholder="Telefonnummer"/>-->
+<!--                </div>-->
+<!--                <div class="input-div">-->
+<!--                    <input class="inputs" type="text" placeholder="Adress"/>-->
+<!--                </div>-->
+<!--                <div class="input-div">-->
+<!--                    <input class="inputs small-input" type="number" placeholder="Postnummer"/>-->
+<!--                    <input class="inputs" type="text" placeholder="Kommun"/>-->
+<!--                </div>-->
+<!--                <div class="input-div">-->
+<!--                    <input class="inputs" type="text" onfocus="(this.type='date')"  placeholder="Välj datum för driftkostnad"/>-->
+<!--                </div>-->
+<!--                <button>Skicka</button>-->
+                <?php echo do_shortcode('[contact-form-7 id="168" title="Offertförfrågan"]') ; ?>
+            </div>
         <?php elseif(is_page( 'offertforfragan' )) : ?>
             <div class="forms">
                 <div class="input-div radios">
