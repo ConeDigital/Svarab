@@ -386,7 +386,7 @@ h1, h2, h3, h5 {
 
 h3 {
   font-size: 32px;
-  line-height: 56px;
+  line-height: 45px;
   color: #333333;
   margin: 0; }
   @media (max-width: 800px) {
@@ -1136,18 +1136,34 @@ MOBILE MENU STYLING
 .sub-pages-content {
   max-width: 800px;
   width: 100%; }
-  .sub-pages-content form {
+  .sub-pages-content .forms {
     width: -webkit-calc(100% + 45px);
     width: calc(100% + 45px); }
     @media (max-width: 900px) {
-      .sub-pages-content form {
+      .sub-pages-content .forms {
         width: 100%; } }
-    .sub-pages-content form button {
+    .sub-pages-content .forms button {
       width: 170px;
       margin-top: 30px; }
-    .sub-pages-content form textarea {
+    .sub-pages-content .forms textarea {
       padding-top: 20px;
       height: 216px; }
+  .sub-pages-content .wpcf7-form-control-wrap {
+    position: relative;
+    width: 100%;
+    margin-right: 45px; }
+  .sub-pages-content .wpcf7-submit {
+    min-width: 178px;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    color: white;
+    border: none;
+    background: #5091BD;
+    margin-top: 30px; }
+    @media (max-width: 600px) {
+      .sub-pages-content .wpcf7-submit {
+        min-width: 140px; } }
   .sub-pages-content p {
     line-height: 26px; }
   .sub-pages-content input[type=radio] {
@@ -1180,6 +1196,12 @@ MOBILE MENU STYLING
     margin-right: 100px;
     cursor: pointer; }
 
+.input-small-div span:first-child {
+  max-width: 170px; }
+  @media (max-width: 600px) {
+    .input-small-div span:first-child {
+      max-width: 100%; } }
+
 .input-div {
   margin-top: 30px;
   display: -webkit-box;
@@ -1205,9 +1227,8 @@ MOBILE MENU STYLING
 
 .inputs {
   height: 50px;
-  width: -webkit-calc(100% - 45px);
-  width: calc(100% - 45px);
-  margin-right: 45px; }
+  width: -webkit-calc(100% - 25px);
+  width: calc(100% - 25px); }
   @media (max-width: 900px) {
     .inputs {
       width: -webkit-calc(100% - 20px);
@@ -1916,14 +1937,8 @@ MOBILE MENU STYLING
     left: 0;
     top: 0;
     z-index: 1; }
-  .related-post-grid:hover .related-post-grid-text {
-    margin-top: -50px;
-    margin-bottom: 50px; }
-    .related-post-grid:hover .related-post-grid-text button {
-      opacity: 1;
-      margin-top: 20px;
-      visibility: visible;
-      display: block; }
+  .related-post-grid:hover .related-post-grid-text h4 {
+    color: #212121; }
 
 .related-post-img {
   width: 100%;
@@ -1946,7 +1961,9 @@ MOBILE MENU STYLING
     font-size: 20px;
     line-height: 27px;
     color: #5091BD;
-    font-weight: 400; }
+    font-weight: 400;
+    -webkit-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out; }
   .related-post-grid-text p {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
@@ -2105,6 +2122,40 @@ MOBILE MENU STYLING
 .front-hero-inputs {
   z-index: 1;
   margin-top: 34px; }
+  .front-hero-inputs div.wpcf7 {
+    width: 100%; }
+  .front-hero-inputs .wpcf7-form-control-wrap {
+    margin-right: 9px;
+    width: -webkit-calc(100%);
+    width: calc(100%); }
+  .front-hero-inputs form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .front-hero-inputs input {
+    height: 46px; }
+  .front-hero-inputs .wpcf7-email {
+    width: -webkit-calc(100% - 26px);
+    width: calc(100% - 26px); }
+  .front-hero-inputs .wpcf7-submit {
+    max-width: 178px;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    color: white;
+    border: none;
+    background: #5091BD; }
+    @media (max-width: 600px) {
+      .front-hero-inputs .wpcf7-submit {
+        max-width: 140px; } }
+  .front-hero-inputs .ajax-loader {
+    display: none !important; }
 
 .front-second {
   -webkit-box-align: center;

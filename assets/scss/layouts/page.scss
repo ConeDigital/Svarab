@@ -214,7 +214,7 @@
   max-width: 800px;
   width: 100%;
 
-  form{
+  .forms{
     width: calc(100% + 45px);
 
     @include breakpoint(laptop) {
@@ -228,6 +228,25 @@
     textarea{
       padding-top: 20px;
       height: 216px;
+    }
+  }
+  .wpcf7-form-control-wrap {
+    position: relative;
+    width: 100%;
+    margin-right: 45px;
+  }
+  .wpcf7-submit{
+    min-width: 178px;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    color: white;
+    border: none;
+    background: $blue;
+    margin-top: 30px;
+
+    @include breakpoint(small) {
+      min-width: 140px;
     }
   }
 
@@ -274,6 +293,13 @@
   }
 }
 
+.input-small-div span:first-child{
+  max-width: 170px;
+  @include breakpoint(small) {
+    max-width: 100%;
+  }
+}
+
 .input-div{
   margin-top: 30px;
   display: flex;
@@ -293,8 +319,7 @@
 
 .inputs{
   height: 50px;
-  width: calc(100% - 45px);
-  margin-right: 45px;
+  width: calc(100% - 25px);
 
   @include breakpoint(laptop) {
     width: calc(100% - 20px);

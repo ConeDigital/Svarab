@@ -28,6 +28,7 @@
         <div class="contact-menu-content">
             <a href="<?php echo esc_url(home_url('/offertforfragan'))?>">Offertförfrågan</a>
             <a href="<?php echo esc_url(home_url('/aterforsaljare'))?>">Återförsäljare</a>
+            <a href="<?php echo esc_url(home_url('/aterforsaljare'))?>">Artiklar</a>
             <div class="contact-menu-info">
                 <a href="#"><i class="material-icons">local_phone</i> 010-141 88 66</a>
                 <a href="mailto:info@svarab.se"><i class="material-icons">email</i> info@svarab.se</a>

@@ -78,13 +78,16 @@
 
   &:hover{
     .related-post-grid-text{
-      margin-top: -50px;
-      margin-bottom: 50px;
-      button{
-        opacity: 1;
-        margin-top: 20px;
-        visibility: visible;
-        display: block;
+      //margin-top: -50px;
+      //margin-bottom: 50px;
+      //button{
+      //  opacity: 1;
+      //  margin-top: 20px;
+      //  visibility: visible;
+      //  display: block;
+      //}
+      h4{
+        color: #212121;
       }
     }
   }
@@ -115,6 +118,7 @@
     line-height: 27px;
     color: $blue;
     font-weight: 400;
+    transition: color 0.3s ease-in-out;
   }
   p{
     font-family: $roboto;

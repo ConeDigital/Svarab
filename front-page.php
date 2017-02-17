@@ -4,8 +4,9 @@
         <h1><?php the_title() ; ?></h1>
         <p><?php the_field('hero-sub') ; ?></p>
         <div class="front-hero-inputs email-inputs">
-            <input type="email" placeholder="Din email adress"/>
-            <button>Hämta ner guide</button>
+<!--            <input type="email" placeholder="Din email adress"/>-->
+<!--            <button>Hämta ner guide</button>-->
+            <?php echo do_shortcode('[contact-form-7 id="167" title="Hämta ner guide"]') ; ?>
         </div>
         <div class="hero-overlay"></div>
     </div>

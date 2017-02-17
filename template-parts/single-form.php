@@ -9,18 +9,20 @@
 ?>
 <section class="single-form">
     <div class="sub-pages-content">
-        <form>
+        <div class="forms">
             <h4>Boka kostnadsfri konsultation</h4>
             <p>Augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Ut varius tincidunt libero. Augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Ut varius tincidunt libero.</p>
-            <div class="input-div">
-                <input class="inputs" type="text" placeholder="Förnamn*"/>
-                <input class="inputs" type="text" placeholder="Efternamn*" />
-            </div>
-            <div class="input-div">
-                <input class="inputs" type="email" placeholder="Email adress*"/>
-                <input class="inputs" type="text" placeholder="Ort för kundbesök*"/>
-            </div>
-            <button>Skicka Intresseförfrågan</button>
-        </form>
+<!--            <div class="input-div">-->
+<!--                <input class="inputs" type="text" placeholder="Förnamn*"/>-->
+<!--                <input class="inputs" type="text" placeholder="Efternamn*" />-->
+<!--            </div>-->
+<!--            <div class="input-div">-->
+<!--                <input class="inputs" type="email" placeholder="Email adress*"/>-->
+<!--                <input class="inputs" type="text" placeholder="Ort för kundbesök*"/>-->
+<!--            </div>-->
+<!--            <button>Skicka Intresseförfrågan</button>-->
+            <?php echo do_shortcode('[contact-form-7 id="169" title="Boka konsultation"]') ; ?>
+
+        </div>
     </div>
 </section>
