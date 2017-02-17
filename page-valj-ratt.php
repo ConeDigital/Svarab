@@ -125,9 +125,11 @@
             <p>Boka en kostnadsfri konsultation med en av våra prominenta återförsäljare. Fyll i dina uppgifter nedan så kontaktar vi dig inom 24 timmar. </p>
             <button class="green-button">Boka kostnadsfri konsultation</button>
             <p class="enter-mail-text">Eller skriv in din mail och hämta produktblad</p>
-            <div class="email-inputs">
-                <input type="email" placeholder="Din email adress" />
-                <button>Ladda ner broschyr</button>
+            <div class="front-hero-inputs email-inputs">
+                <?php echo do_shortcode('[contact-form-7 id="170" title="Hämta broschyr"]') ; ?>
+
+<!--                <input type="email" placeholder="Din email adress" />-->
+<!--                <button>Ladda ner broschyr</button>-->
             </div>
         </div>
         <div class="conf-modal-content conf-modal-result conf-modal-book" style="display: none;">
