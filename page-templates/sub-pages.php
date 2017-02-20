@@ -71,9 +71,6 @@
                     </div>
                 <?php endwhile; ?>
             </div>
-            <div class="contact-retailer-modal" style="display: none;">
-                <?php echo do_shortcode('[contact-form-7 id="175" title="contact-retailer"]') ; ?>
-            </div>
         <?php elseif(is_page( 'garantiregistrering' )) : ?>
             <div class="forms">
 <!--                <div class="input-div radios">-->

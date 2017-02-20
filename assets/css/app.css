@@ -734,6 +734,44 @@ header {
   left: 0;
   top: 0; }
 
+.contact-retailer-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .contact-retailer-modal h2 span {
+    color: #5FC55F; }
+  .contact-retailer-modal .small-form {
+    padding: 20px 0 40px 45px;
+    background: white;
+    position: relative; }
+
+.close-c-modal {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  cursor: pointer;
+  color: #8e8e8e;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out; }
+  .close-c-modal:hover {
+    color: #212121; }
+
 /*--------------------------------------------
 
   Hamburger styling
@@ -1893,15 +1931,16 @@ MOBILE MENU STYLING
 .no-margin-bottom {
   margin-bottom: 0 !important; }
 
-.conf-modal-last {
-  overflow: scroll;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  height: -webkit-calc(100% - 8em);
-  height: calc(100% - 8em);
-  padding: 4em 2em 4em; }
+@media (max-width: 600px) {
+  .conf-modal-last {
+    overflow: scroll;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: -webkit-calc(100% - 8em);
+    height: calc(100% - 8em);
+    padding: 4em 2em 4em; } }
 
 .top-modal, .bottom-modal {
   width: 100%;

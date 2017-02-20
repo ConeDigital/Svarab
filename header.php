@@ -23,6 +23,13 @@
     <div class="hidden" hidden>
         <?php get_template_part( 'images/sprite.svg' ); ?>
     </div>
+    <div class="contact-retailer-modal" style="display: none;">
+        <div class="forms sub-pages-content small-form">
+            <i class="material-icons close-c-modal">close</i>
+            <h2>Boka en <span>kostnadsfri</span> konsultation</h2>
+            <?php echo do_shortcode('[contact-form-7 id="176" title="Produkt konf. konsultation"]') ; ?>
+        </div>
+    </div>
     <div class="dark-overlay"></div>
     <div class="contact-menu">
         <i class="material-icons close-c-menu">close</i>

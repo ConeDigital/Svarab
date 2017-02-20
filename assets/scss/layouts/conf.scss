@@ -344,10 +344,14 @@
 }
 
 .conf-modal-last{
-  overflow: scroll;
-  justify-content: flex-start;
-  height: calc(100% - 8em);
-  padding: 4em 2em 4em;
+
+  @include breakpoint(small) {
+    overflow: scroll;
+    justify-content: flex-start;
+    height: calc(100% - 8em);
+    padding: 4em 2em 4em;
+  }
+
 }
 
 .top-modal, .bottom-modal{
