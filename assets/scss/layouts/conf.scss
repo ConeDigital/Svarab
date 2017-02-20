@@ -94,6 +94,7 @@
   DISPLAY: FLEX;
   FLEX-DIRECTION: COLUMN;
   ALIGN-ITEMS: CENTER;
+  justify-content: center;
 
   @include breakpoint(tablet) {
     margin: 0 20px;
@@ -137,6 +138,10 @@
   svg{
     width: 100%;
     height: 100%;
+  }
+  img{
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -182,7 +187,7 @@
   cursor: pointer;
   color: #8E8E8E;
   margin: 0;
-
+  z-index: 2;
   @include breakpoint(desktop) {
     right: 2em;
     top: 2em;
@@ -205,6 +210,7 @@
   cursor: pointer;
   font-weight: bold;
   margin: 0;
+  z-index: 2;
 
   @include breakpoint(desktop) {
     left: 2em;
@@ -301,8 +307,68 @@
   h2{
     text-align: left;
     width: 550px;
+
+    @include breakpoint(small) {
+      width: 100%;
+    }
   }
   p{
     text-align: left;
+
+    @include breakpoint(small) {
+      max-width: 100%;
+    }
   }
+}
+
+.small-form{
+  max-width: 595px;
+  width: 100%;
+  padding-left: 45px;
+
+  @include breakpoint(small) {
+    padding-left: 0;
+  }
+
+  .wpcf7-form{
+    text-align: left;
+  }
+  .wpcf7-textarea{
+    padding-top: 20px;
+    min-height: 76px;
+  }
+}
+
+.no-margin-bottom{
+  margin-bottom: 0 !important;
+}
+
+.conf-modal-last{
+  overflow: scroll;
+  justify-content: flex-start;
+  height: calc(100% - 8em);
+  padding: 4em 2em 4em;
+}
+
+.top-modal, .bottom-modal{
+  width: 100%;
+  position: absolute;
+  height: 51px;
+  background: white;
+  left: 0;
+  z-index: 0;
+  display: none;
+
+  @include breakpoint(small) {
+    display: block;
+  }
+}
+
+.top-modal{
+  top:0;
+}
+
+.bottom-modal{
+  bottom: 0;
+  filter: blur(5px);
 }

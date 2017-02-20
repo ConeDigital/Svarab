@@ -52,6 +52,20 @@
     color: white;
     border: none;
     background: $blue;
+    //transition: 0.2s ease-in-out;
+    //max-height: 50px;
+    //position: relative;
+    //
+    //&:after{
+    //  content: 'file_download';
+    //  font-family: 'Material Icons';
+    //  top:0;
+    //  position: absolute;
+    //}
+    //
+    //&:hover{
+    //  padding-top: 50px;
+    //}
 
     @include breakpoint(small) {
       max-width: 140px;

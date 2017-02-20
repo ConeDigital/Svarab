@@ -38,7 +38,10 @@
             </button>
         </div>
     </section>
-    <?php get_template_part( 'template-parts/guides', get_post_format() ); ?>
+    <section class="related-posts guides-section">
+        <h3>Våra guider hjälper dig att välja rätt</h3>
+        <?php get_template_part( 'template-parts/guides', get_post_format() ); ?>
+    </section>
     <?php get_template_part( 'template-parts/single-form', get_post_format() ); ?>
 
 

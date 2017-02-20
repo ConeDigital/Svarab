@@ -16,17 +16,13 @@
             <div class="conf-modal-options">
                 <div class="conf-modal-option">
                     <div class="conf-modal-img c-m-big-img">
-                        <svg width="169px" height="170px" shape-rendering="geometricPrecision">
-                            <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?>#snow"></use>
-                        </svg>
+                        <img src="<?php echo esc_url(home_url('/wp-content/themes/svarab/assets/images/snowman@2x.png')); ?>">
                     </div>
                     <p>Permanentboende</p>
                 </div>
                 <div class="conf-modal-option">
                     <div class="conf-modal-img c-m-big-img">
-                        <svg width="170px" height="170px" shape-rendering="geometricPrecision">
-                            <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?>#farm"></use>
-                        </svg>
+                        <img src="<?php echo esc_url(home_url('/wp-content/themes/svarab/assets/images/farm@2x.png')); ?>">
                     </div>
                     <p>Fritidshus</p>
                 </div>
@@ -122,8 +118,8 @@
                 systemet <span class="product-suggestion">Oxyfix</span>
             </h2>
             <a href="#">Läs mer om <span class="product-suggestion">Oxyfix</span></a>
-            <p>Boka en kostnadsfri konsultation med en av våra prominenta återförsäljare. Fyll i dina uppgifter nedan så kontaktar vi dig inom 24 timmar. </p>
-            <button class="green-button">Boka kostnadsfri konsultation</button>
+            <p>Boka en kostnadsfri konsultation med en av våra prominenta återförsäljare.</p>
+            <button class="green-button conf-modal-option">Boka kostnadsfri konsultation</button>
             <p class="enter-mail-text">Eller skriv in din mail och hämta produktblad</p>
             <div class="front-hero-inputs email-inputs">
                 <?php echo do_shortcode('[contact-form-7 id="170" title="Hämta broschyr"]') ; ?>
@@ -132,12 +128,15 @@
 <!--                <button>Ladda ner broschyr</button>-->
             </div>
         </div>
-        <div class="conf-modal-content conf-modal-result conf-modal-book" style="display: none;">
+        <div class="conf-modal-content conf-modal-result conf-modal-last conf-modal-book" id="step6" style="display: none;">
+            <div class="top-modal"></div>
             <h2>Kostnadsfri konsultation</h2>
-            <p>Boka en kostnadsfri konsultation med en av våra prominenta återförsäljare. Fyll i dina uppgifter nedan så kontaktar vi dig inom 24 timmar. </p>
-
+            <p class="no-margin-bottom">Boka en kostnadsfri konsultation med en av våra prominenta återförsäljare. Fyll i dina uppgifter nedan så kontaktar vi dig inom 24 timmar. </p>
+            <div class="forms sub-pages-content small-form">
+            <?php echo do_shortcode('[contact-form-7 id="176" title="Produkt konf. konsultation"]') ; ?></div>
+            <div class="bottom-modal"></div>
         </div>
-        <p class="conf-progress"><span>1</span> / 5</p>
+        <p class="conf-progress"><span>1</span> / 6</p>
     </div>
 
 <?php get_footer() ; ?>

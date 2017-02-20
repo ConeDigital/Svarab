@@ -29,6 +29,8 @@
         <?php endwhile; ?>
 
     </section>
+    <?php get_template_part( 'template-parts/single-form', get_post_format() ); ?>
+
 
 
 <?php get_footer() ; ?>

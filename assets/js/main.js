@@ -2,6 +2,10 @@
 
 jQuery(document).ready( function($) {
 
+    $(window).load(function () {
+        $('.load-overlay').fadeOut('slow');
+    });
+
     //Open and close mobile menu
     $('.hamburger').on('click', function(){
         closeOpen($(this));
