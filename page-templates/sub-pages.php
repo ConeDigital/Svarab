@@ -65,10 +65,14 @@
                                     echo $category->cat_name . ' ';
                                 } ?>
                             </p>
+                            <input type="hidden" class="hidden-retailer-email" value="<?php the_field('retailer-email') ?>">
                             <a href="#">Kontakta</a>
                         </div>
                     </div>
                 <?php endwhile; ?>
+            </div>
+            <div class="contact-retailer-modal" style="display: none;">
+                <?php echo do_shortcode('[contact-form-7 id="175" title="contact-retailer"]') ; ?>
             </div>
         <?php elseif(is_page( 'garantiregistrering' )) : ?>
             <div class="forms">
