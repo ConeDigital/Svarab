@@ -29,7 +29,7 @@
                 <div class="footer-links">
                     <a href="#">(+46) 08 540 66 11</a>
                     <a href="#">Kundsupport</a>
-                    <a href="<?php echo esc_url(home_url('/aterforaljare'))?>">Återförsäljare</a>
+                    <a href="<?php echo esc_url(home_url('/aterforsaljare'))?>">Återförsäljare</a>
                 </div>
             </div>
         </div>

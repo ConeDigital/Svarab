@@ -476,6 +476,11 @@ MOBILE MENU STYLING
 
   li{
     border-bottom: 1px solid #dfdfdf;
+    transition: 0.25s ease-in-out;
+
+    &:hover{
+      background: #dfdfdf;
+    }
   }
   a{
     text-transform: uppercase;

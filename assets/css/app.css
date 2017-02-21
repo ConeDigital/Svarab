@@ -867,7 +867,11 @@ MOBILE MENU STYLING
   list-style: none;
   margin: 0; }
   .mobile-menu li {
-    border-bottom: 1px solid #dfdfdf; }
+    border-bottom: 1px solid #dfdfdf;
+    -webkit-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out; }
+    .mobile-menu li:hover {
+      background: #dfdfdf; }
   .mobile-menu a {
     text-transform: uppercase;
     font-weight: bold;
@@ -1113,6 +1117,8 @@ EFFECTS STYLING
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start; }
+  .left-hero h1, .left-hero p {
+    text-align: left; }
 
 .background-img {
   background-position: center;
@@ -1434,6 +1440,19 @@ EFFECTS STYLING
       font-size: 10px;
       text-transform: uppercase;
       font-weight: bold; }
+
+span.wpcf7-not-valid-tip {
+  position: absolute;
+  font-size: 12px;
+  bottom: -17px;
+  left: 0;
+  font-family: "Roboto", sans-serif; }
+
+div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
+  border: none;
+  padding: 0;
+  margin: 2em 0 1em;
+  font-family: "Roboto", sans-serif; }
 
 .faq-section {
   background: #f5f5f5;
@@ -2365,6 +2384,10 @@ EFFECTS STYLING
     @media (max-width: 700px) {
       .front-hero p {
         font-size: 18px; } }
+  .front-hero div.wpcf7-mail-sent-ok {
+    position: absolute;
+    bottom: -47px;
+    color: #5FC55F; }
 
 .wpcf7-submit {
   -webkit-transition: background 0.3s ease-in-out;
@@ -2374,7 +2397,8 @@ EFFECTS STYLING
 
 .front-hero-inputs {
   z-index: 1;
-  margin-top: 34px; }
+  margin-top: 34px;
+  position: relative; }
   .front-hero-inputs div.wpcf7 {
     width: 100%; }
   .front-hero-inputs .wpcf7-form-control-wrap {

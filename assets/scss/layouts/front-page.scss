@@ -19,6 +19,11 @@
       font-size: 18px;
     }
   }
+  div.wpcf7-mail-sent-ok{
+    position: absolute;
+    bottom: -47px;
+    color: #5FC55F;
+  }
 }
 
 .wpcf7-submit{
@@ -32,6 +37,7 @@
 .front-hero-inputs{
   z-index: 1;
   margin-top: 34px;
+  position: relative;
 
   div.wpcf7 {
     width: 100%;

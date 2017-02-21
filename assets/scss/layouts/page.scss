@@ -61,6 +61,10 @@
 
 .left-hero{
   align-items: flex-start;
+
+  h1, p{
+    text-align: left;
+  }
 }
 
 .background-img{
@@ -403,4 +407,18 @@
       font-weight: bold;
     }
   }
+}
+
+span.wpcf7-not-valid-tip {
+  position: absolute;
+  font-size: 12px;
+  bottom: -17px;
+  left: 0;
+  font-family: $roboto;
+}
+div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
+  border: none;
+  padding: 0;
+  margin: 2em 0 1em;
+  font-family: $roboto;
 }
