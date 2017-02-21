@@ -503,6 +503,11 @@ blockquote {
   line-height: 56px;
   color: #5091BD;
   font-family: "futura-pt-bold", sans-serif; }
+  .contact-menu-content a {
+    -webkit-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out; }
+    .contact-menu-content a:hover {
+      color: #22445f; }
 
 .contact-menu-info {
   margin-top: 40px; }
@@ -690,19 +695,16 @@ header {
   @media (max-width: 900px) {
     .header-button {
       display: none; } }
-  .header-button a {
+  .header-button div {
     width: 167px;
     height: 40px;
     background-color: #367CA1;
     -webkit-border-radius: 5px;
             border-radius: 5px;
     font-size: 12px;
-    font-weight: bold;
     text-align: center;
     line-height: 12px;
-    color: #FFFFFF;
-    text-decoration: none;
-    text-transform: uppercase;
+    color: #FFF;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -714,7 +716,28 @@ header {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; }
+    .header-button div:hover i {
+      top: 8px; }
+    .header-button div:hover span {
+      margin-bottom: -30%; }
+  .header-button span {
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; }
+  .header-button i {
+    position: absolute;
+    top: -24px;
+    left: 71.5px;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
 
 .all-content {
   margin-top: 96px; }
@@ -966,6 +989,59 @@ MOBILE MENU STYLING
     -webkit-transform: translateX(0);
             transform: translateX(0); } }
 
+/*--------------------------------------------
+
+EFFECTS STYLING
+
+---------------------------------------------*/
+.button-hover {
+  overflow: hidden;
+  position: relative; }
+  .button-hover:hover i {
+    top: 0; }
+  .button-hover:hover span {
+    top: 100%; }
+  .button-hover span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    left: 0;
+    top: 0;
+    -webkit-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out; }
+  .button-hover i {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: -100%;
+    left: 0;
+    -webkit-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out; }
+
 .hero {
   background-color: #5091BD;
   display: -webkit-box;
@@ -1138,6 +1214,8 @@ MOBILE MENU STYLING
   .under-menu li {
     margin-right: 45px;
     height: 100%; }
+    .under-menu li:hover a {
+      color: #5091BD; }
     @media (max-width: 700px) {
       .under-menu li {
         margin-right: 24px; } }
@@ -1158,7 +1236,9 @@ MOBILE MENU STYLING
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -webkit-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out; }
   .under-menu .current_page_item {
     position: relative; }
     .under-menu .current_page_item a {
@@ -1183,6 +1263,11 @@ MOBILE MENU STYLING
 .sub-pages-content {
   max-width: 800px;
   width: 100%; }
+  .sub-pages-content a {
+    -webkit-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out; }
+    .sub-pages-content a:hover {
+      color: #22445f; }
   .sub-pages-content .forms {
     width: -webkit-calc(100% + 45px);
     width: calc(100% + 45px); }
@@ -1336,7 +1421,14 @@ MOBILE MENU STYLING
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-right: 15px; }
+    margin-right: 15px;
+    cursor: pointer;
+    -webkit-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out; }
+    .retail-categories li:hover {
+      background: #5091BD; }
+      .retail-categories li:hover a {
+        color: white; }
     .retail-categories li a {
       color: white;
       font-size: 10px;
@@ -1445,7 +1537,11 @@ MOBILE MENU STYLING
   display: none; }
   .answer a {
     color: #5091BD;
-    text-decoration: none; }
+    text-decoration: none;
+    -webkit-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out; }
+    .answer a:hover {
+      color: #22445f; }
   .answer p {
     margin: 0;
     line-height: 26px; }
@@ -1669,7 +1765,11 @@ MOBILE MENU STYLING
   .conf-modal-content p {
     margin: 20px 0 32px; }
   .conf-modal-content a {
-    font-family: "Roboto", sans-serif; }
+    font-family: "Roboto", sans-serif;
+    -webkit-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out; }
+    .conf-modal-content a:hover {
+      color: #22445f; }
 
 .conf-modal-options {
   display: -webkit-box;
@@ -2190,7 +2290,11 @@ MOBILE MENU STYLING
   .staff-grid a {
     font-size: 14px;
     font-weight: bold;
-    display: block; }
+    display: block;
+    -webkit-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out; }
+    .staff-grid a:hover {
+      color: #22445f; }
 
 .staff-img {
   width: 130px;
@@ -2262,6 +2366,12 @@ MOBILE MENU STYLING
       .front-hero p {
         font-size: 18px; } }
 
+.wpcf7-submit {
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out; }
+  .wpcf7-submit:hover {
+    background: #22445f !important; }
+
 .front-hero-inputs {
   z-index: 1;
   margin-top: 34px; }
@@ -2319,7 +2429,11 @@ MOBILE MENU STYLING
   .front-second a {
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: bold; }
+    font-weight: bold;
+    -webkit-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out; }
+    .front-second a:hover {
+      color: #22445f; }
 
 .front-second-content {
   max-width: 800px; }
@@ -2517,7 +2631,11 @@ footer {
     font-size: 14px;
     font-weight: 300;
     line-height: 19px;
-    color: #333333; }
+    color: #333333;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; }
+    .footer-content a:hover {
+      text-decoration: underline; }
 
 .footer-links a {
   display: block;
@@ -2816,7 +2934,8 @@ footer {
   width: 100%;
   height: 100%;
   left: 0;
-  top: 0; }
+  top: 0;
+  z-index: 1; }
 
 .no-touch #cd-vertical-nav {
   /*fix the navigation*/
@@ -2897,3 +3016,8 @@ footer {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1); }
+
+.product-button {
+  text-transform: uppercase;
+  max-width: 180px;
+  font-weight: 600; }

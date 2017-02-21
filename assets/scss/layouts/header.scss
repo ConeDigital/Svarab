@@ -113,6 +113,13 @@ blockquote{
   line-height: 56px;
   color: $blue;
   font-family: $futura;
+
+  a{
+    transition: color 0.2s ease-in-out;
+    &:hover{
+      color: $hover-color;
+    }
+  }
 }
 
 .contact-menu-info{
@@ -293,21 +300,43 @@ header{
     display: none;
   }
 
-  a{
+  div{
     width: 167px;
     height: 40px;
     background-color: #367CA1;
     border-radius: 5px;
     font-size: 12px;
-    font-weight: bold;
     text-align: center;
     line-height: 12px;
-    color: #FFFFFF;
-    text-decoration: none;
-    text-transform: uppercase;
+    color: #FFF;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    &:hover{
+      i{
+        top:8px;
+      }
+      span{
+        margin-bottom: -30%;
+      }
+    }
+  }
+  span{
+    transition: 0.2s ease-in-out;
+
+  }
+  i{
+    position: absolute;
+    top: -24px;
+    left: 71.5px;
+    transition: 0.2s ease-in-out;
+    transform: rotate(180deg);
   }
 }
 
@@ -554,5 +583,49 @@ MOBILE MENU STYLING
     to {
       transform: translateX(0);
     }
+  }
+}
+
+
+/*--------------------------------------------
+
+EFFECTS STYLING
+
+---------------------------------------------*/
+
+.button-hover{
+  overflow: hidden;
+  position: relative;
+
+  &:hover{
+    i{
+      top: 0;
+    }
+    span{
+      top: 100%;
+    }
+  }
+  span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top:0;
+    transition: 0.25s ease-in-out;
+  }
+
+  i{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -100%;
+    left: 0;
+    transition: 0.25s ease-in-out;
   }
 }

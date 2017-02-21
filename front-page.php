@@ -32,8 +32,9 @@
                     <p><i class="material-icons">check</i><?php the_sub_field('pro') ; ?></p>
                 <?php endwhile; ?>
             <?php endif; ?>
-            <button>
-                Läs mer om våra system
+            <button class="button-hover">
+                <i class="material-icons">launch</i>
+                <span>Läs mer om våra system</span>
                 <a href="<?php echo esc_url(home_url('/produkter')); ?>"></a>
             </button>
         </div>

@@ -119,7 +119,10 @@
             </h2>
             <a href="#">Läs mer om <span class="product-suggestion">Oxyfix</span></a>
             <p>Boka en kostnadsfri konsultation med en av våra prominenta återförsäljare.</p>
-            <button class="green-button conf-modal-option">Boka kostnadsfri konsultation</button>
+            <button class="green-button conf-modal-option button-hover">
+                <span>Boka kostnadsfri konsultation</span>
+                <i class="material-icons">forward</i>
+            </button>
             <p class="enter-mail-text">Eller skriv in din mail och hämta produktblad</p>
             <div class="front-hero-inputs email-inputs">
                 <?php echo do_shortcode('[contact-form-7 id="170" title="Hämta broschyr"]') ; ?>
