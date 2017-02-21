@@ -18,7 +18,10 @@
     <div class="right-section">
         <div class="book-kommun">
             <p>Boka konsultation för enskilt avlopp - gratis.</p>
-            <button>Kontakta Oss</button>
+            <button class="button-hover">
+                <span>Kontakta Oss</span>
+                <i class="material-icons">mail_outline</i>
+            </button>
         </div>
         <div class="right-section-links">
             <h5>Livsviktiga länkar</h5>

@@ -162,6 +162,11 @@
   li{
     margin-right: 45px;
     height: 100%;
+    &:hover{
+      a{
+        color: $blue;
+      }
+    }
 
     @include breakpoint(tablet) {
       margin-right: 24px;
@@ -184,6 +189,7 @@
     height: 100%;
     display: flex;
     align-items: center;
+    transition: 0.25s ease-in-out;
   }
 
   .current_page_item{
@@ -213,6 +219,14 @@
 .sub-pages-content{
   max-width: 800px;
   width: 100%;
+
+  a{
+    transition: color 0.3s ease-in-out;
+
+    &:hover{
+      color: $hover-color;
+    }
+  }
 
   .forms{
     width: calc(100% + 45px);
@@ -371,6 +385,16 @@
     align-items: center;
     justify-content: center;
     margin-right: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+
+    &:hover{
+      background: $blue;
+
+      a{
+        color: white;
+      }
+    }
 
     a{
       color: white;

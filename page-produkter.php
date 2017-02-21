@@ -24,7 +24,11 @@
                     <?php endwhile; ?>
                 <?php endif; ?>
                 </div>
-                <a href="<?php the_permalink() ; ?>">Läs mer</a>
+                <button class="green-button product-button button-hover">
+                    <a href="<?php the_permalink() ; ?>" class="product-link"></a>
+                    <span>Läs mer</span>
+                    <i class="material-icons">launch</i>
+                </button>
             </div>
         <?php endwhile; ?>
 

@@ -53,7 +53,10 @@
             <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'walker' => $walker ) ); ?>
         </div>
         <div class="header-button">
-            <a href="#">Kontakta oss</a>
+            <div>
+                <span>Kontakta oss</span>
+                <i class="material-icons">forward</i>
+            </div>
         </div>
         <button class="hamburger hamburger--spin" type="button">
                 <span class="hamburger-box">
