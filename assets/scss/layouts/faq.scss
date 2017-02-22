@@ -20,6 +20,7 @@
   width: calc(100% - 82px);
   position: relative;
   color: #8E8E8E;
+  display: none;
 
 
   i{
@@ -45,7 +46,7 @@
   display: flex;
   width: calc(100% + 2em);
   justify-content: space-between;
-  padding-top: 4em;
+  padding-top: 0;
   flex-wrap: wrap;
   @include breakpoint(medium) {
     flex-direction: column;
