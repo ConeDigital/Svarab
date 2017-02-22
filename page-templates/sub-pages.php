@@ -97,7 +97,7 @@
 <!--                    <input class="inputs" type="text" onfocus="(this.type='date')"  placeholder="Välj datum för driftkostnad"/>-->
 <!--                </div>-->
 <!--                <button>Skicka</button>-->
-                <?php echo do_shortcode('[contact-form-7 id="168" title="Offertförfrågan"]') ; ?>
+                <?php echo do_shortcode('[contact-form-7 id="179" title="Garantiregistrering"]') ; ?>
             </div>
         <?php elseif(is_page( 'offertforfragan' )) : ?>
             <div class="forms">

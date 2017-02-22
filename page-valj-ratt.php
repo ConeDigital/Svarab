@@ -117,7 +117,7 @@
                 I ditt hem passar..<br/>
                 systemet <span class="product-suggestion">Oxyfix</span>
             </h2>
-            <a href="#">Läs mer om <span class="product-suggestion">Oxyfix</span></a>
+            <a class="product-config-link" data-value="<?php echo esc_url( home_url('/products/') ) ?>" href="<?php echo esc_url( home_url('/products/') ) ?>">Läs mer om <span class="product-suggestion">Oxyfix</span></a>
             <p>Boka en kostnadsfri konsultation med en av våra prominenta återförsäljare.</p>
             <button class="green-button conf-modal-option button-hover">
                 <span>Boka kostnadsfri konsultation</span>
