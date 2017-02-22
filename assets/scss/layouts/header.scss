@@ -125,14 +125,14 @@ blockquote{
 .contact-menu-info{
   margin-top: 40px;
   a{
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
     line-height: 12px;
     color: #8E8E8E;
     display: flex;
     align-items: center;
     text-align: center;
-    margin-top: 14px;
+    margin-top: 18px;
 
     i{
       margin-right: 10px;
@@ -372,7 +372,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   h2{
     
     span{
@@ -384,13 +384,20 @@ header{
     padding: 20px 0 40px 45px;
     background: white;
     position: relative;
+
+    @include breakpoint(small) {
+      padding: 20px 1em 40px 1em;
+      height: calc(100% - 60px);
+      overflow: scroll;
+    }
+
   }
 }
 
 .close-c-modal{
   position: absolute;
   top: 20px;
-  right: 45px;
+  right: 20px;
   cursor: pointer;
   color: #8e8e8e;
   transition: color 0.2s ease-in-out;
