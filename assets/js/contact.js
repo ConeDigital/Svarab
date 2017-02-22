@@ -1,11 +1,16 @@
 jQuery(document).ready( function($) {
 
-    $('.retailer-contact a').on('click', function(){
+    $('.retailer-contact a, .book-kommun button').on('click', function(){
         event.preventDefault();
-        var email = $(this).siblings('.hidden-retailer-email').val();
-        var hidden_email = $('body').find('.contactform-hidden-email');
-        hidden_email.val(email);
-
+        //If modal is accessed from retailer
+        if( !$(this).hasClass('button-hover') ){
+        	//Get retailer email
+	        var email = $(this).siblings('.hidden-retailer-email').val();
+	        //Set retailer email so contatct form 7 can use it
+			var hidden_email = $('body').find('.contactform-hidden-email');
+			hidden_email.val(email);
+        }
+        //Show modal
         $('.contact-retailer-modal').show();
     });
 
@@ -13,6 +18,7 @@ jQuery(document).ready( function($) {
     	$('.contact-retailer-modal').hide();
     });
 
+    //Close modal on click outside or esc
     $(document).on('click keyup', function(event) {
     	
     	//Get DOM-element of container
@@ -20,11 +26,10 @@ jQuery(document).ready( function($) {
     	//If press esc, close modal
     	if (event.keyCode === 27) $('.close-c-modal').click();
 
-    	//If clicked object isnt <a> and clicked element isnt in container
-    	if( event.target.tagName != 'A' && ! $.contains(element, event.toElement) ){
+    	//If clicked object isnt <a> or <i> and clicked element isnt in container
+    	if( event.target.tagName != 'A' && event.target.tagName != 'I' && ! $.contains(element, event.toElement) ){
     		//Hide container
     		$('.contact-retailer-modal').hide();
     	} 
 	});
-
 });
