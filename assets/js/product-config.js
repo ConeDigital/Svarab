@@ -65,6 +65,13 @@ jQuery(document).ready( function($) {
         //Change product sugestion
         $('.product-suggestion').html(product);
 
+        if (product != 'Oxyfix och Biop'){
+            $('.product-config-link').attr('href', $('.product-config-link').data('value') + $('.product-suggestion').html());
+        }else{
+            $('.product-config-link').attr('href', $('.product-config-link').data('value'));
+        }
+        
+
         //Show current modal content
         $(step).fadeIn('slow');//attr('style', '');
 
