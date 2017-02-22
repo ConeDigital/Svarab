@@ -32,10 +32,10 @@
             <div class="single-content">
                 <?php the_content(); ?>
                 <div class="social-sharer">
-                    <svg width="30px" height="30px" shape-rendering="geometricPrecision">
+                    <svg width="30px" height="30px" shape-rendering="geometricPrecision" class="sharer button" data-sharer="facebook" data-url="<?php the_permalink() ?>">
                         <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?>#facebook"></use>
                     </svg>
-                    <svg width="30px" height="30px" shape-rendering="geometricPrecision">
+                    <svg width="30px" height="30px" shape-rendering="geometricPrecision" class="sharer button" data-sharer="twitter" data-url="<?php the_permalink() ?>">
                         <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?>#twitter"></use>
                     </svg>
                 </div>
