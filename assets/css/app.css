@@ -1286,6 +1286,8 @@ EFFECTS STYLING
     .sub-pages-content .forms textarea {
       padding-top: 20px;
       height: 216px; }
+    .sub-pages-content .forms h4 {
+      margin-top: 40px; }
   .sub-pages-content .wpcf7-form-control-wrap {
     position: relative;
     width: 100%;
@@ -1453,6 +1455,30 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
   padding: 0;
   margin: 2em 0 1em;
   font-family: "Roboto", sans-serif; }
+
+.wpcf7-radio {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.radios span.wpcf7-list-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 0; }
+
+.radios .wpcf7-list-item-label {
+  font-size: 16px;
+  line-height: 26px;
+  color: #212121;
+  padding-left: 27px;
+  margin-right: 56px;
+  cursor: pointer; }
+
+.margin-bottom-none {
+  margin-bottom: 0; }
 
 .faq-section {
   background: #f5f5f5;

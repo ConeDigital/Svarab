@@ -97,16 +97,16 @@
 <!--                    <input class="inputs" type="text" onfocus="(this.type='date')"  placeholder="Välj datum för driftkostnad"/>-->
 <!--                </div>-->
 <!--                <button>Skicka</button>-->
-                <?php echo do_shortcode('[contact-form-7 id="179" title="Garantiregistrering"]') ; ?>
+                <?php echo do_shortcode('[contact-form-7 id="180" title="Garantiregistrering"]') ; ?>
             </div>
         <?php elseif(is_page( 'offertforfragan' )) : ?>
             <div class="forms">
-                <div class="input-div radios">
-                    <input type="radio" name="product" value="biop"  id="Biop">
-                    <label for="Biop">Biop</label>
-                    <input type="radio" name="product" value="oxifyx" id="oxifyx">
-                    <label for="oxifyx">Oxifyx</label>
-                </div>
+<!--                <div class="input-div radios">-->
+<!--                    <input type="radio" name="product" value="biop"  id="Biop">-->
+<!--                    <label for="Biop">Biop</label>-->
+<!--                    <input type="radio" name="product" value="oxifyx" id="oxifyx">-->
+<!--                    <label for="oxifyx">Oxifyx</label>-->
+<!--                </div>-->
                 <?php echo do_shortcode('[contact-form-7 id="168" title="Offertförfrågan"]') ; ?>
 
                 <!--                <div class="input-div">-->

@@ -247,6 +247,9 @@
       padding-top: 20px;
       height: 216px;
     }
+    h4{
+      margin-top: 40px;
+    }
   }
   .wpcf7-form-control-wrap {
     position: relative;
@@ -421,4 +424,27 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
   padding: 0;
   margin: 2em 0 1em;
   font-family: $roboto;
+}
+
+.wpcf7-radio{
+  display: flex;
+}
+
+.radios{
+  span.wpcf7-list-item{
+    display: flex;
+    margin-left: 0;
+  }
+  .wpcf7-list-item-label{
+    font-size: 16px;
+    line-height: 26px;
+    color: #212121;
+    padding-left: 27px;
+    margin-right: 56px;
+    cursor: pointer;
+
+  }
+}
+.margin-bottom-none{
+  margin-bottom: 0;
 }

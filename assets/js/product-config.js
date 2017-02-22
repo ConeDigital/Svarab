@@ -68,7 +68,7 @@ jQuery(document).ready( function($) {
         if (product != 'Oxyfix och Biop'){
             $('.product-config-link').attr('href', $('.product-config-link').data('value') + $('.product-suggestion').html());
         }else{
-            $('.product-config-link').attr('href', $('.product-config-link').data('value'));
+            $('.product-config-link').attr('href', $('.product-config-link').data('both'));
         }
         
 
