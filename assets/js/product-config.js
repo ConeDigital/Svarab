@@ -65,6 +65,9 @@ jQuery(document).ready( function($) {
         //Change product sugestion
         $('.product-suggestion').html(product);
 
+        //Set CF7 hidden field to product suggestion
+        $('.hidden-product').val(product);
+
         if (product != 'Oxyfix och Biop'){
             $('.product-config-link').attr('href', $('.product-config-link').data('value') + $('.product-suggestion').html());
         }else{
