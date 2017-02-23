@@ -1369,7 +1369,8 @@ EFFECTS STYLING
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
-            flex-direction: row; } }
+            flex-direction: row;
+    margin-top: 20px; } }
 
 .inputs {
   height: 50px;
@@ -1467,6 +1468,13 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  @media (max-width: 600px) {
+    .wpcf7-radio {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .radios span.wpcf7-list-item {
   display: -webkit-box;
@@ -1482,6 +1490,10 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
   padding-left: 27px;
   margin-right: 56px;
   cursor: pointer; }
+  @media (max-width: 800px) {
+    .radios .wpcf7-list-item-label {
+      margin-right: 30px;
+      min-width: 100%; } }
 
 .margin-bottom-none {
   margin-bottom: 0; }

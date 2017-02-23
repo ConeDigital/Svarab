@@ -335,6 +335,7 @@
 
   @include breakpoint(small) {
     flex-direction: row;
+    margin-top: 20px;
   }
 }
 
@@ -428,6 +429,10 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
 
 .wpcf7-radio{
   display: flex;
+
+  @include breakpoint(small) {
+    flex-direction: column;
+  }
 }
 
 .radios{
@@ -443,6 +448,10 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
     margin-right: 56px;
     cursor: pointer;
 
+    @include breakpoint(medium) {
+      margin-right: 30px;
+      min-width: 100%;
+    }
   }
 }
 .margin-bottom-none{
