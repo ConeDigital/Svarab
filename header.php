@@ -28,7 +28,14 @@
         <div class="forms sub-pages-content small-form">
             <i class="material-icons close-c-modal">close</i>
             <h2>Boka en <span>kostnadsfri</span> konsultation</h2>
-            <?php echo do_shortcode('[contact-form-7 id="178" title="contact-modal"]') ; ?>
+
+            <?php 
+            if( is_page('aterforsaljare')){
+                echo do_shortcode('[contact-form-7 id="191" title="contact-retailer"]') ;
+            }else{
+                echo do_shortcode('[contact-form-7 id="189" title="contact-modal"]') ;
+            }
+             ?>
         </div>
     </div>
     <div class="dark-overlay"></div>

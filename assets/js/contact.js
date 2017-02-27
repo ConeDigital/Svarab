@@ -16,20 +16,26 @@ jQuery(document).ready( function($) {
 
     $('.close-c-modal').on('click', function(){
     	$('.contact-retailer-modal').hide();
+        $('.inputs').val('');
     });
 
     //Close modal on click outside or esc
-    $(document).on('click keyup', function(event) {
+    $(document).on('click', function(event) {
     	
     	//Get DOM-element of container
     	var element = $('.contact-retailer-modal')[0];
-    	//If press esc, close modal
-    	if (event.keyCode === 27) $('.close-c-modal').click();
 
     	//If clicked object isnt <a> or <i> and clicked element isnt in container
     	if( event.target.tagName != 'A' && event.target.tagName != 'I' && ! $.contains(element, event.toElement) ){
     		//Hide container
-    		$('.contact-retailer-modal').hide();
+    		$('.close-c-modal').click();
     	} 
 	});
+
+        $(document).on('keyup', function(event) {
+        
+        //If press esc, close modal
+        if (event.keyCode === 27) $('.close-c-modal').click();
+
+    });
 });
