@@ -4,8 +4,8 @@
     "fields": [
         {
             "key": "field_589d75f86adc2",
-            "label": "F\u00f6rdelar",
-            "name": "",
+            "label": "Snabbinfo",
+            "name": "snabbinfo",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -17,6 +17,51 @@
             },
             "placement": "top",
             "endpoint": 0
+        },
+        {
+            "key": "field_58b3e12faa5a1",
+            "label": "Bild p\u00e5 produkten",
+            "name": "product-img",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_589d76336adc3",
+            "label": "Hur m\u00e5nga hush\u00e5ll",
+            "name": "houses",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
         },
         {
             "key": "field_589d75b86adc1",
@@ -38,48 +83,6 @@
             "new_lines": "wpautop",
             "readonly": 0,
             "disabled": 0
-        },
-        {
-            "key": "field_589d76336adc3",
-            "label": "F\u00f6rdelar",
-            "name": "perks",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "collapsed": "",
-            "min": "",
-            "max": "",
-            "layout": "table",
-            "button_label": "Add Row",
-            "sub_fields": [
-                {
-                    "key": "field_589d764c6adc4",
-                    "label": "F\u00f6rdel",
-                    "name": "perk",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": "",
-                    "readonly": 0,
-                    "disabled": 0
-                }
-            ]
         },
         {
             "key": "field_589c72fe98387",
@@ -244,5 +247,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1486714465
+    "modified": 1488183639
 }

@@ -4,27 +4,26 @@
     <h1><?php the_title() ; ?></h1>
     <p><?php the_field('hero-sub') ; ?></p>
 </div>
-    <section class="row sub-pages-row">
-        <div class="sub-pages-content">
-            <?php the_content(); ?>
-        </div>
-    </section>
+<div class="info-border">
+    <a href="<?php echo esc_url(home_url('/kontakt')); ?>"></a>
+    <h5>Kontakta oss om du känner dig osäker på vad du ska välja</h5>
+</div>
+<!--    <section class="row sub-pages-row">-->
+<!--        <div class="sub-pages-content">-->
+<!--            --><?php //the_content(); ?>
+<!--        </div>-->
+<!--    </section>-->
     <section class="product-section">
         <?php $loop = new WP_Query( array( 'post_type' => 'products') ); ?>
 
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
             <div class="product-grid">
+                <img src="<?php the_field('product-img') ; ?>">
                 <a class="product-link" href="<?php the_permalink() ; ?>"></a>
+                <p class="grey-p"><?php the_field('houses') ; ?></p>
                 <h3><?php the_title() ;?></h3>
-                <p><?php the_field('product-expl') ; ?></p>
-                <div class="product-perks">
-                <?php if( have_rows('perks') ): ?>
-                    <?php while( have_rows('perks') ) : the_row(); remove_filter('acf_the_content', 'wpautop'); ?>
-                        <p><i class="material-icons">check_circle</i><?php the_sub_field('perk') ; ?></p>
-                    <?php endwhile; ?>
-                <?php endif; ?>
-                </div>
-                <button class="green-button product-button button-hover">
+                <?php the_field('product-expl') ; ?>
+                <button class=" product-button button-hover">
                     <a href="<?php the_permalink() ; ?>" class="product-link"></a>
                     <span>Läs mer</span>
                     <i class="material-icons">launch</i>
@@ -33,7 +32,7 @@
         <?php endwhile; ?>
 
     </section>
-    <?php get_template_part( 'template-parts/single-form', get_post_format() ); ?>
+<!--    --><?php //get_template_part( 'template-parts/single-form', get_post_format() ); ?>
 
 
 
