@@ -12,7 +12,7 @@
         <p class="close-conf-modal"><i class="material-icons ">close</i></p>
         <div class="conf-modal-content" id="step1">
             <h2>Typ av boende?</h2>
-            <p>Vilket typ av hus du bor i spelar roll för denna uträkning</p>
+            <p>Vilken typ av fastighet ska avloppet anläggas vid? </p>
             <div class="conf-modal-options">
                 <div class="conf-modal-option">
                     <div class="conf-modal-img c-m-big-img">
@@ -30,7 +30,7 @@
         </div>
         <div class="conf-modal-content" id="step2" style="display: none;">
             <h2>Antal hushåll?</h2>
-            <p>Sharing is caring! (och bättre för plånboken)</p>
+            <p>Finns det möjlighet att dela avlopp med närliggande fastighet?</p>
             <div class="conf-modal-options" data-id="0">
                 <div class="conf-modal-option conf-choice" data-option="0">
                     <div class="conf-modal-img c-m-i-small-img">
@@ -53,13 +53,13 @@
             </div>
         </div>
         <div class="conf-modal-content" id="step3" style="display: none;">
-            <h2>Skyddsnyvå?</h2>
+            <h2>Skyddsnivå?</h2>
             <p>Skyddsnivån spelar roll. Läs: <a target="_blank" href="<?php echo esc_url(home_url('/guides/vilken-skyddsniva-har-jag/')); ?>">Vilken skyddsnivå har jag?</a></p>
             <div class="conf-modal-options" data-id="1">
                 <div class="conf-modal-option conf-choice" data-option="0">
                     <div class="conf-modal-img c-m-i-small-img">
                         <svg width="51px" height="47px" shape-rendering="geometricPrecision">
-                            <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?>#warning"></use>
+                            <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?>#high"></use>
                         </svg>
                     </div>
                     <p>Hög skyddsnivå</p>
@@ -67,16 +67,14 @@
                 <div class="conf-modal-option conf-choice" data-option="1">
                     <div class="conf-modal-img c-m-i-small-img">
                         <svg width="47px" height="47px" shape-rendering="geometricPrecision">
-                            <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?>#smile"></use>
+                            <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?>#low"></use>
                         </svg>
                     </div>
                     <p>Normal skyddsnivå</p>
                 </div>
                 <div class="conf-modal-option conf-choice" data-option="2">
-                    <div class="conf-modal-img c-m-i-small-img">
-                        <svg width="47px" height="47px" shape-rendering="geometricPrecision">
-                            <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?>#question"></use>
-                        </svg>
+                    <div class="conf-modal-img c-m-i-small-img q-mark">
+                        <h4>?</h4>
                     </div>
                     <p>Vet ej</p>
                 </div>
@@ -103,10 +101,8 @@
                     <p>Nej</p>
                 </div>
                 <div class="conf-modal-option conf-choice" data-option="2">
-                    <div class="conf-modal-img c-m-i-small-img">
-                        <svg width="47px" height="47px" shape-rendering="geometricPrecision">
-                            <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?>#question"></use>
-                        </svg>
+                    <div class="conf-modal-img c-m-i-small-img q-mark">
+                        <h4>?</h4>
                     </div>
                     <p>Vet ej</p>
                 </div>

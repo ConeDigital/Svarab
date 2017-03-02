@@ -2126,6 +2126,9 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
   -webkit-filter: blur(5px);
           filter: blur(5px); }
 
+.q-mark h4 {
+  font-size: 60px; }
+
 .related-posts {
   padding: 3.5em 1.2em 3.5em 4em;
   -webkit-box-align: center;

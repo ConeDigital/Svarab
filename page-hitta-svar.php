@@ -11,10 +11,10 @@
         </div>
         <div class="faq-grid-section">
         <?php if( have_rows('faq') ): ?>
-            <?php while( have_rows('faq') ) : the_row(); remove_filter('acf_the_content', 'wpautop'); ?>
+            <?php while( have_rows('faq') ) : the_row(); ?>
                     <div class="faq-grid">
                         <h4><?php the_sub_field('question-title') ; ?></h4>
-                        <?php while( have_rows('q-and-a') ) : the_row(); remove_filter('acf_the_content', 'wpautop'); ?>
+                        <?php while( have_rows('q-and-a') ) : the_row(); ?>
                         <div>
                         <p class="question"><i class="material-icons">keyboard_arrow_right</i><?php the_sub_field('question') ; ?></p>
                             <div class="answer">
