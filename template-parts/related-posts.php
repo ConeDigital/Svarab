@@ -7,10 +7,10 @@
  * @package Skeleton
  */
 ?>
-<?php $loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 4)); ?>
+<?php $loop = new WP_Query( array( 'post_type' => 'guides', 'posts_per_page' => 4, 'orderby' => 'rand')); ?>
 
     <section class="related-posts">
-        <h4 class="related-headline">Relaterade artiklar</h4>
+        <h4 class="related-headline">Fler artiklar</h4>
         <div class="related-post-wrapper">
             <?php if ( $loop->have_posts() ) : ?>
                 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
@@ -27,6 +27,7 @@
             <?php endif; ?>
         </div>
     </section>
+
 <?php wp_reset_query(); ?>
 
 
