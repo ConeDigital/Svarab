@@ -49,7 +49,7 @@
             </div>
             <div hidden><?php $kommun == the_field('kommun-name') ; ?></div>
             <div class="retailer-grid-section less-margin">
-                <?php $loop = new WP_Query( array( 'post_type' => 'retailers', 'category_name' => $kommun, 'orderby' => 'name', 'order' => 'asc' ) ); ?>
+                <?php $loop = new WP_Query( array( 'post_type' => 'retailers', 'category_name' => $kommun, 'orderby' => 'name', 'order' => 'asc', 'posts_per_page' => -1 ) ); ?>
                 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                     <div class="retailer-grid <?php echo get_the_category()[0]->name; ?>">
                         <h4><?php the_title() ; ?></h4>
