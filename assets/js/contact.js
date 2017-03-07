@@ -16,7 +16,7 @@ jQuery(document).ready( function($) {
 
     $('.close-c-modal').on('click', function(){
     	$('.contact-retailer-modal').hide();
-        $('.inputs').val('');
+        
     });
 
     //Close modal on click outside or esc
@@ -29,10 +29,11 @@ jQuery(document).ready( function($) {
     	if( event.target.tagName != 'A' && event.target.tagName != 'I' && ! $.contains(element, event.toElement) ){
     		//Hide container
     		$('.close-c-modal').click();
+            $('.contact-retailer-modal .inputs').val('');
     	} 
 	});
 
-        $(document).on('keyup', function(event) {
+    $(document).on('keyup', function(event) {
         
         //If press esc, close modal
         if (event.keyCode === 27) $('.close-c-modal').click();
