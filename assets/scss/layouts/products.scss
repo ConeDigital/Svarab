@@ -6,10 +6,11 @@
 
 .product-section{
   display: flex;
-  padding: 4em;
+  padding: 4em 4em 10em 4em;
+  position: relative;
 
   @include breakpoint(desktop) {
-    padding: 3em 2em;
+    padding: 3em 2em 6em;
   }
   @include breakpoint(medium) {
     flex-direction: column;
@@ -27,6 +28,7 @@
   text-align: center;
   margin-right: 45px;
   width: 33%;
+  z-index: 1;
 
   @include breakpoint(medium) {
     margin-bottom: 60px;
