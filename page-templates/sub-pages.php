@@ -13,7 +13,12 @@
 <div class="sub-pages-menu">
     <i class="material-icons scroll-icon">keyboard_arrow_right</i>
     <div class="blur-menu"></div>
-    <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'under-menu' ) ); ?>
+    <?php if(is_page( 'garantiregistrering' )) : ?>
+        <?php wp_nav_menu( array( 'theme_location' => 'product', 'menu_class' => 'under-menu' ) ); ?>
+    <?php else : ?>
+        <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'under-menu' ) ); ?>
+
+    <?php endif ; ?>
 </div>
 <section class="row sub-pages-row <?php if(is_page( 'garantiregistrering' ) || is_page('offertforfragan')) echo 'grey-backr' ?>">
     <div class="sub-pages-content">

@@ -51,9 +51,8 @@
     text-transform: uppercase;
   }
   img{
-    max-width: 100%;
-    height: 300px;
-    width: auto;
+    height: auto;
+    width: 100%;
   }
   h3{
     color: $blue;
@@ -116,6 +115,16 @@
   bottom: auto;
   transform: translateY(-50%);
   z-index: 10;
+
+  @include breakpoint(large) {
+    right: 2em;
+  }
+  @include breakpoint(desktop) {
+    right: 1em;
+  }
+  @include breakpoint(laptop) {
+    display: none;
+  }
 
   ul{
     list-style: none;
@@ -218,4 +227,62 @@
     left: 0;
     top:0;
   }
+}
+
+#section4{
+  padding: 0;
+}
+
+.service-form{
+  text-align: center;
+
+  p{
+    max-width: 630px;
+    margin: 1em auto;
+    font-family: $merri;
+  }
+
+  input, select{
+    font-size: 16px;
+
+  }
+
+  select{
+    width: 100%;
+    background: white;
+    border-radius: 2px !important;
+    height: 54px;
+    border: 1px solid #DFDFDF;
+    line-height: 16px;
+    color: #8E8E8E;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-left: 23px;
+
+    &::-ms-expand{
+      display: none;
+    }
+
+    @include breakpoint(small) {
+      margin: 30px 0;
+    }
+  }
+
+  .wpcf7-submit{
+    margin: 0;
+  }
+}
+
+.service-dropdown{
+  &:after{
+    font-family: 'Material Icons';
+    content: 'keyboard_arrow_down';
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    font-size: 24px;
+    color: #8e8e8e;
+
+  }
+
 }

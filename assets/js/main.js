@@ -111,4 +111,29 @@ jQuery(document).ready( function($) {
         $('.dark-overlay').fadeOut('fast');
         $('.contact-menu').css("transform", "translateX(200%)" );
     });
+
+
+    //All swipers
+    var swiper = new Swiper('.review-swiper', {
+        slidesPerView: 2,
+        spaceBetween: 80,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: 8000,
+        grabCursor: true,
+        autoplayDisableOnInteraction: false,
+        breakpoints: {
+            // when window width is <= 320px
+            1100: {
+                spaceBetween: 30
+            },
+            1000: {
+                spaceBetween: 0,
+                slidesPerView: 1
+            },
+            700: {
+                spaceBetween: 10
+            }
+        }
+    });
 });

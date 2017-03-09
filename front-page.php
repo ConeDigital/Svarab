@@ -17,16 +17,37 @@
     </div>
     <section class="front-second row">
         <div class="front-second-content">
-            <h3><?php the_field('to-conf-title') ; ?></h3>
-            <p><?php the_field('to-conf-content') ; ?></p>
-            <a href="<?php echo esc_url(home_url('/valj-ratt')); ?>">Till produktkonfiguratorn</a>
+<!--            <h3>--><?php //the_field('to-conf-title') ; ?><!--</h3>-->
+<!--            <p>--><?php //the_field('to-conf-content') ; ?><!--</p>-->
+<!--            <a href="--><?php //echo esc_url(home_url('/valj-ratt')); ?><!--">Till produktkonfiguratorn</a>-->
+<!--            <div class="big-question">-->
+<!--                <a href="--><?php //echo esc_url(home_url('/valj-ratt')); ?><!--"></a>-->
+<!--                <svg width="138px" height="138px" shape-rendering="geometricPrecision">-->
+<!--                    <use xlink:href="--><?php //echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?><!--#big-question"></use>-->
+<!--                </svg>-->
+<!--            </div>-->
+            <div class="swiper-container review-swiper">
+                <div class="swiper-wrapper">
+                    <?php if( have_rows('reviews') ): ?>
+                        <?php while( have_rows('reviews') ) : the_row(); remove_filter('acf_the_content', 'wpautop'); ?>
+                            <div class="swiper-slide">
+                                <div class="review-left">
+                                    <div class="review-img" style="background-image: url('<?php echo get_sub_field('review-img') ; ?>')"></div>
+                                    <span><?php echo get_sub_field('review-name') ; ?></span>
+                                    <span><?php echo get_sub_field('review-title') ; ?></span>
+                                </div>
+                                <div class="review-right">
+                                    <img src="<?php echo esc_url(home_url('/wp-content/themes/svarab/assets/images/blockq.png')); ?>" />
+                                    <p><?php echo get_sub_field('review-content') ; ?></p>
+                                </div>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
-        <div class="big-question">
-            <a href="<?php echo esc_url(home_url('/valj-ratt')); ?>"></a>
-            <svg width="138px" height="138px" shape-rendering="geometricPrecision">
-                <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?>#big-question"></use>
-            </svg>
-        </div>
+
     </section>
     <section class="front-third">
         <div class="front-third-left background-img" style="background-image: url('<?php the_field('pros-img') ; ?>')"></div>

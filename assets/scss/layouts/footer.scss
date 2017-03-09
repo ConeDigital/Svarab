@@ -5,6 +5,7 @@ footer{
   background: white;
   position: relative;
   border-top: 1px solid #eee;
+  z-index: 10;
 
   @include breakpoint(desktop) {
     padding: 3em 2em;
