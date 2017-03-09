@@ -30,7 +30,9 @@
                 </button>
             </div>
         <?php endwhile; ?>
-
+        <div class="splash">
+            <img src="<?php echo esc_url(home_url( '/wp-content/themes/svarab/assets/images/background.png' ) ); ?>">
+        </div>
     </section>
 <!--    --><?php //get_template_part( 'template-parts/single-form', get_post_format() ); ?>
 

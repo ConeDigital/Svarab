@@ -15,7 +15,7 @@
     <div class="blur-menu"></div>
     <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'under-menu' ) ); ?>
 </div>
-<section class="row sub-pages-row">
+<section class="row sub-pages-row <?php if(is_page( 'garantiregistrering' ) || is_page('offertforfragan')) echo 'grey-backr' ?>">
     <div class="sub-pages-content">
         <?php the_content(); ?>
         <?php if(is_page( 'kontakta-oss' )) : ?>
@@ -134,6 +134,9 @@
 <!--                <button class="offer-form-submit">Skicka</button>-->
             </div>
         <?php endif ; ?>
+    </div>
+    <div class="splash">
+        <img src="<?php echo esc_url(home_url( '/wp-content/themes/svarab/assets/images/background.png' ) ); ?>">
     </div>
 </section>
 
