@@ -38,20 +38,25 @@
         <?php elseif(is_page( 'aterforsaljare' )) : ?>
 <!--             <input class="big-search" type="search" placeholder="Sök efter kommun" /> -->
             <div class="retail-categories">
-                <li class="cat-item" style="background: #5091BD">
+                <li class="cat-item" data-name="Alla" style="background: #5091BD">
                     <a href="#">Alla</a>
                 </li>
-                <?php wp_list_categories( array(
-                    'orderby'    => 'name',
-                    'exclude'  => array( 1 ),
-                    'title_li' => ''
-                ) ); ?>
+
+                <?php
+                    $cats = get_categories(); 
+
+                    foreach ( $cats as $cat ) {
+                        if ($cat->name != 'uncategorized'){
+                            echo '<li class="cat-item" data-name="'. str_replace(' ', '-', $cat->name) .'"><a href="#">'. $cat->name .'</a></li>';
+                        }
+                    }
+                ?>
             </div>
             <div hidden><?php $kommun == the_field('kommun-name') ; ?></div>
             <div class="retailer-grid-section less-margin">
                 <?php $loop = new WP_Query( array( 'post_type' => 'retailers', 'category_name' => $kommun, 'orderby' => 'name', 'order' => 'asc', 'posts_per_page' => -1 ) ); ?>
                 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                    <div class="retailer-grid <?php echo get_the_category()[0]->name; ?>">
+                    <div class="retailer-grid <?php echo str_replace(' ', '-', get_the_category()[0]->name); ?>">
                         <h4><?php the_title() ; ?></h4>
                         <p>
                             <?php the_field('retailer-number') ?>

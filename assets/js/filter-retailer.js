@@ -11,9 +11,9 @@ jQuery(document).ready( function($) {
         $(this).css('background', '#5091BD');
 
         //If same kommun is clicked do nothing
-        if(kommun != $(this).find('a').html()){
+        if(kommun != $(this).data('name')){
             //else set variable to clicked kommun
-            kommun = $(this).find('a').html();
+            kommun = $(this).data('name');
             //If Alla isnt clicked
             if ( kommun != 'Alla' ){
                 //Hide all results and then fadeIn matched results
