@@ -107,14 +107,14 @@
 .front-second{
   align-items: center;
   min-height: 215px;
-  padding: 4em 4em 0 4em;
+  padding: 7em 4em 0 4em;
 
   @include breakpoint(desktop) {
-    padding: 4em 2em 0 2em;
+    padding: 5em 2em 0 2em;
   }
 
   @include breakpoint(mobile) {
-    padding: 2em 1em 0 1em;
+    padding: 3em 1em 0 1em;
   }
 
   p{
@@ -247,7 +247,7 @@
 
 .review-swiper{
   width: 100%;
-  padding-bottom: 5em;
+  padding-bottom: 7em;
 
   .swiper-slide{
     display: flex;
@@ -263,6 +263,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    bottom: 35px;
   }
 
   .swiper-pagination-bullet-active {

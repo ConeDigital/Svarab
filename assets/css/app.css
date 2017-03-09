@@ -2524,13 +2524,13 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
       -ms-flex-align: center;
           align-items: center;
   min-height: 215px;
-  padding: 4em 4em 0 4em; }
+  padding: 7em 4em 0 4em; }
   @media (max-width: 1000px) {
     .front-second {
-      padding: 4em 2em 0 2em; } }
+      padding: 5em 2em 0 2em; } }
   @media (max-width: 500px) {
     .front-second {
-      padding: 2em 1em 0 1em; } }
+      padding: 3em 1em 0 1em; } }
   .front-second p {
     font-family: "Roboto", sans-serif;
     line-height: 26px; }
@@ -2657,7 +2657,7 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
 
 .review-swiper {
   width: 100%;
-  padding-bottom: 5em; }
+  padding-bottom: 7em; }
   .review-swiper .swiper-slide {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2690,7 +2690,8 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    bottom: 35px; }
   .review-swiper .swiper-pagination-bullet-active {
     background: transparent;
     border: 1px solid #90dfaa;
