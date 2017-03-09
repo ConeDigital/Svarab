@@ -2699,15 +2699,7 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
     height: 10px; }
 
 .review-left {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  display: inline-block; }
   @media (max-width: 1000px) {
     .review-left {
       min-width: 200px; } }
@@ -2724,7 +2716,9 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     line-height: 16px;
-    color: #4A4A4A; }
+    color: #4A4A4A;
+    display: inline-block;
+    min-width: 75px; }
 
 .review-img {
   width: 70px;
@@ -2736,8 +2730,7 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
   margin-bottom: 12px; }
 
 .review-right {
-  max-width: 340px;
-  margin-left: 15px;
+  margin-left: 50px;
   position: relative; }
   @media (max-width: 1000px) {
     .review-right {

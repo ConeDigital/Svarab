@@ -275,8 +275,8 @@
 }
 
 .review-left{
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
+  //flex-direction: column;
 
   @include breakpoint(desktop) {
     min-width: 200px;
@@ -295,6 +295,8 @@
     font-size: 12px;
     line-height: 16px;
     color: #4A4A4A;
+    display: inline-block;
+    min-width: 75px;
 
   }
 }
@@ -309,8 +311,8 @@
 }
 
 .review-right{
-  max-width: 340px;
-  margin-left: 15px;
+  //max-width: 340px;
+  margin-left: 50px;
   position: relative;
 
   @include breakpoint(desktop) {
