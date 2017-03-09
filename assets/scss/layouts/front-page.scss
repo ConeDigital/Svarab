@@ -107,9 +107,14 @@
 .front-second{
   align-items: center;
   min-height: 215px;
+  padding: 4em 4em 0 4em;
 
-  @include breakpoint(medium) {
-    flex-direction: column;
+  @include breakpoint(desktop) {
+    padding: 4em 2em 0 2em;
+  }
+
+  @include breakpoint(mobile) {
+    padding: 2em 1em 0 1em;
   }
 
   p{
@@ -130,7 +135,8 @@
 }
 
 .front-second-content{
-  max-width: 800px;
+  //max-width: 800px;
+  width: 100%;
 }
 
 .big-question{
@@ -236,5 +242,100 @@
       width: 100%;
       height: 100%;
     }
+  }
+}
+
+.review-swiper{
+  width: 100%;
+  padding-bottom: 5em;
+
+  .swiper-slide{
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(mobile) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .swiper-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: transparent;
+    border: 1px solid #90dfaa;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.review-left{
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint(desktop) {
+    min-width: 200px;
+  }
+  @include breakpoint(mobile) {
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  span:last-child{
+    font-weight: 600;
+  }
+
+  span{
+    font-family: $roboto;
+    font-size: 12px;
+    line-height: 16px;
+    color: #4A4A4A;
+
+  }
+}
+
+.review-img{
+  width: 70px;
+  height: 70px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 100%;
+  margin-bottom: 12px;
+}
+
+.review-right{
+  max-width: 340px;
+  margin-left: 15px;
+  position: relative;
+
+  @include breakpoint(desktop) {
+    max-width: 100%;
+  }
+  @include breakpoint(mobile) {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  img{
+    position: absolute;
+    z-index: 0;
+    left: -31px;
+    top: -6px;
+
+    @include breakpoint(mobile) {
+      left: 0;
+    }
+  }
+
+  p{
+    margin: 0;
+    font-size: 20px;
+    line-height: 33px;
+    color: #000000;
+    position: relative;
   }
 }

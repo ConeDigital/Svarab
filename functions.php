@@ -42,6 +42,7 @@ function cone_theme_setup() {
     register_nav_menus( array(
         'primary' => __( 'Primary menu', 'cone' ),
         'secondary' => __( 'Secondary menu', 'cone' ),
+        'product' => __( 'Product menu', 'cone' ),
         'mobile' => __( 'Mobile menu', 'cone' ),
         'footer' => __( 'Footer menu', 'cone' )
     ) );
@@ -145,6 +146,10 @@ function cone_enqueue_scripts() {
 
     // Hamburger script and css
     wp_enqueue_script( 'hamburger-scripts', get_template_directory_uri() . '/assets/js/lib/hamburger.js', array('jquery'), 1.0, true );
+
+    wp_enqueue_script( 'swiper-scripts', get_template_directory_uri() . '/assets/js/lib/swiper.min.js', array('jquery'), 1.0, true );
+
+    wp_enqueue_style( 'swiper-style', get_template_directory_uri() . '/assets/css/lib/swiper.min.css' );
 
     wp_enqueue_style( 'hamburger-style', get_template_directory_uri() . '/assets/css/lib/hamburgers.min.css' );
 
