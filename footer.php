@@ -27,8 +27,9 @@
             <div class="footer-content">
                 <p>Kontakta oss</p>
                 <div class="footer-links">
-                    <a href="#">(+46) 08 540 66 11</a>
-                    <a href="#">Kundsupport</a>
+                    <a href="#">08-83 64 22</a>
+                    <a href="mailto:info@svarab.se">info@svarab.se</a>
+<!--                    <a href="#">Kundsupport</a>-->
                     <a href="<?php echo esc_url(home_url('/aterforsaljare'))?>">Återförsäljare</a>
                 </div>
             </div>

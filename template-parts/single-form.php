@@ -11,7 +11,7 @@
     <div class="sub-pages-content">
         <div class="forms">
             <h4>Boka kostnadsfri konsultation</h4>
-            <p>Augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Ut varius tincidunt libero. Augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Ut varius tincidunt libero.</p>
+            <p>Fyll i formuläret så kontaktar vi dig inom kort!</p>
 <!--            <div class="input-div">-->
 <!--                <input class="inputs" type="text" placeholder="Förnamn*"/>-->
 <!--                <input class="inputs" type="text" placeholder="Efternamn*" />-->
