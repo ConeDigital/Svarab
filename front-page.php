@@ -5,7 +5,7 @@
         <p><?php the_field('hero-sub') ; ?></p>
         <button class="button-hover">
             <i class="material-icons">launch</i>
-            <span>Pröva vår produktgenerator</span>
+            <span>Testa vår produktgenerator</span>
             <a href="<?php echo esc_url(home_url('/valj-ratt')); ?>"></a>
         </button>
 <!--        <div class="front-hero-inputs email-inputs">-->

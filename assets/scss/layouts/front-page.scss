@@ -276,15 +276,16 @@
 }
 
 .review-left{
-  display: inline-block;
+  display: table;
   //flex-direction: column;
 
   @include breakpoint(desktop) {
-    min-width: 200px;
+    //min-width: 200px;
   }
   @include breakpoint(mobile) {
     align-items: center;
     margin-bottom: 25px;
+
   }
 
   span:last-child{
@@ -296,9 +297,13 @@
     font-size: 12px;
     line-height: 16px;
     color: #4A4A4A;
-    display: inline-block;
-    min-width: 75px;
+    display: table;
+    //min-width: 75px;
 
+    @include breakpoint(mobile) {
+      display: block;
+      text-align: center;
+    }
   }
 }
 
@@ -309,12 +314,19 @@
   background-size: cover;
   border-radius: 100%;
   margin-bottom: 12px;
+
+  @include breakpoint(mobile) {
+    margin: 0 auto 12px auto;
+
+  }
 }
 
 .review-right{
   //max-width: 340px;
   margin-left: 50px;
   position: relative;
+  padding-right: 35px;
+  width: 100%;
 
   @include breakpoint(desktop) {
     max-width: 100%;
@@ -322,6 +334,7 @@
   @include breakpoint(mobile) {
     text-align: center;
     margin-left: 0;
+    padding-right: 0;
   }
 
   img{

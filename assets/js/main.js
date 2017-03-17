@@ -115,7 +115,7 @@ jQuery(document).ready( function($) {
 
     //All swipers
     var swiper = new Swiper('.review-swiper', {
-        slidesPerView: 2,
+        slidesPerView: 2, //1000px => 1
         spaceBetween: 80,
         pagination: '.swiper-pagination',
         paginationClickable: true,
@@ -128,12 +128,9 @@ jQuery(document).ready( function($) {
                 spaceBetween: 30
             },
             1000: {
-                spaceBetween: 0,
+                spaceBetween: 10,
                 slidesPerView: 1
             },
-            700: {
-                spaceBetween: 10
-            }
         }
     });
 });

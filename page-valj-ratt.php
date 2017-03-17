@@ -56,14 +56,6 @@
             <h2>Skyddsnivå?</h2>
             <p>Skyddsnivån spelar roll. Läs: <a target="_blank" href="<?php echo esc_url(home_url('/guides/vilken-skyddsniva-har-jag/')); ?>">Vilken skyddsnivå har jag?</a></p>
             <div class="conf-modal-options" data-id="1">
-                <div class="conf-modal-option conf-choice" data-option="0">
-                    <div class="conf-modal-img c-m-i-small-img">
-                        <svg width="51px" height="47px" shape-rendering="geometricPrecision">
-                            <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?>#high"></use>
-                        </svg>
-                    </div>
-                    <p>Hög skyddsnivå</p>
-                </div>
                 <div class="conf-modal-option conf-choice" data-option="1">
                     <div class="conf-modal-img c-m-i-small-img">
                         <svg width="47px" height="47px" shape-rendering="geometricPrecision">
@@ -71,6 +63,14 @@
                         </svg>
                     </div>
                     <p>Normal skyddsnivå</p>
+                </div>
+                <div class="conf-modal-option conf-choice" data-option="0">
+                    <div class="conf-modal-img c-m-i-small-img">
+                        <svg width="51px" height="47px" shape-rendering="geometricPrecision">
+                            <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?>#high"></use>
+                        </svg>
+                    </div>
+                    <p>Hög skyddsnivå</p>
                 </div>
                 <div class="conf-modal-option conf-choice" data-option="2">
                     <div class="conf-modal-img c-m-i-small-img q-mark">

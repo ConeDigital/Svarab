@@ -2700,10 +2700,7 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
     height: 10px; }
 
 .review-left {
-  display: inline-block; }
-  @media (max-width: 1000px) {
-    .review-left {
-      min-width: 200px; } }
+  display: table; }
   @media (max-width: 500px) {
     .review-left {
       -webkit-box-align: center;
@@ -2718,8 +2715,11 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
     font-size: 12px;
     line-height: 16px;
     color: #4A4A4A;
-    display: inline-block;
-    min-width: 75px; }
+    display: table; }
+    @media (max-width: 500px) {
+      .review-left span {
+        display: block;
+        text-align: center; } }
 
 .review-img {
   width: 70px;
@@ -2729,17 +2729,23 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
   -webkit-border-radius: 100%;
           border-radius: 100%;
   margin-bottom: 12px; }
+  @media (max-width: 500px) {
+    .review-img {
+      margin: 0 auto 12px auto; } }
 
 .review-right {
   margin-left: 50px;
-  position: relative; }
+  position: relative;
+  padding-right: 35px;
+  width: 100%; }
   @media (max-width: 1000px) {
     .review-right {
       max-width: 100%; } }
   @media (max-width: 500px) {
     .review-right {
       text-align: center;
-      margin-left: 0; } }
+      margin-left: 0;
+      padding-right: 0; } }
   .review-right img {
     position: absolute;
     z-index: 0;
