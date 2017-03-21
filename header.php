@@ -62,7 +62,7 @@
         </div>
         <div class="header-button">
             <div>
-                <span>Kontakta oss</span>
+                <span>Mer info</span>
                 <i class="material-icons">forward</i>
             </div>
         </div>

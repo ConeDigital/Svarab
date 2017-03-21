@@ -54,7 +54,7 @@
         </div>
         <div class="conf-modal-content" id="step3" style="display: none;">
             <h2>Skyddsnivå?</h2>
-            <p>Skyddsnivån spelar roll. Ladda ner: <a target="_blank" href="<?php echo esc_url(home_url('/wp-content/themes/svarab/assets/images/FUNKTIONSKRAV.docx')); ?>">Vilken skyddsnivå har jag?</a></p>
+            <p>Skyddsnivån spelar roll. Ladda ner: <a target="_blank" href="<?php echo esc_url(home_url('/wp-content/uploads/2017/03/FUNKTIONSKRAV.pdf')); ?>">Vilken skyddsnivå har jag?</a></p>
             <div class="conf-modal-options" data-id="1">
                 <div class="conf-modal-option conf-choice" data-option="1">
                     <div class="conf-modal-img c-m-i-small-img">
@@ -82,7 +82,7 @@
         </div>
         <div class="conf-modal-content" id="step4" style="display: none;">
             <h2>Godkänd slamavskiljare?</h2>
-            <p>Finns det någon godkänd slamavskiljare. Ladda ner: <a href="<?php echo esc_url(home_url('/wp-content/themes/svarab/assets/images/godkandaslamavskiljare.docx')); ?>">Godkända slamavskiljare</a></p>
+            <p>Finns det någon godkänd slamavskiljare. Ladda ner: <a href="<?php echo esc_url(home_url('/wp-content/uploads/2017/03/godkandaslamavskiljare.pdf')); ?>">Godkända slamavskiljare</a></p>
             <div class="conf-modal-options" data-id="2">
                 <div class="conf-modal-option conf-choice" data-option="0">
                     <div class="conf-modal-img c-m-i-small-img">

@@ -44,7 +44,7 @@
         <div class="sub-pages-content">
             <div class="forms">
                 <h3>Skicka mig mer information angående service!</h3>
-                <p>Misstänker du att du har ett bristfälligt avlopp på din fastighet måste detta åtgärdas. Inför åtgärden ska du skicka in en ansökan.</p>
+                <p>Fyll i din email adress så skickar vi dig mer information om våra Serviceavtal.</p>
                 <!--            <div class="input-div">-->
                 <!--                <input class="inputs" type="text" placeholder="Förnamn*"/>-->
                 <!--                <input class="inputs" type="text" placeholder="Efternamn*" />-->
