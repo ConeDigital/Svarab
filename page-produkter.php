@@ -28,11 +28,11 @@
                 <p class="grey-p"><?php the_field('houses') ; ?></p>
                 <h3><?php the_title() ;?></h3>
                 <?php the_field('product-expl') ; ?>
-                <button class=" product-button button-hover">
+                <div class=" product-button button-hover a-button">
                     <a href="<?php the_permalink() ; ?>" class="product-link"></a>
                     <span>Läs mer</span>
                     <i class="material-icons">launch</i>
-                </button>
+                </div>
             </div>
         <?php endwhile; ?>
 <!--        <div class="splash">-->

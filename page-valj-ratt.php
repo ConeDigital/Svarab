@@ -82,7 +82,7 @@
         </div>
         <div class="conf-modal-content" id="step4" style="display: none;">
             <h2>Godkänd slamavskiljare?</h2>
-            <p>Finns det någon godkänd slamavskiljare. Ladda ner: <a href="<?php echo esc_url(home_url('/wp-content/uploads/2017/03/godkandaslamavskiljare.pdf')); ?>">Godkända slamavskiljare</a></p>
+            <p>Finns det någon godkänd slamavskiljare. Ladda ner: <a target="_blank" href="<?php echo esc_url(home_url('/wp-content/uploads/2017/03/godkandaslamavskiljare.pdf')); ?>">Godkända slamavskiljare</a></p>
             <div class="conf-modal-options" data-id="2">
                 <div class="conf-modal-option conf-choice" data-option="0">
                     <div class="conf-modal-img c-m-i-small-img">
@@ -115,10 +115,10 @@
             </h2>
             <a class="product-config-link" data-both="<?php echo esc_url( home_url('/produkter/') ) ?>" data-value="<?php echo esc_url( home_url('/products/') ) ?>" href="<?php echo esc_url( home_url('/produkter/') ) ?>">Läs mer om <span class="product-suggestion">Oxyfix</span></a>
             <p>Boka en kostnadsfri konsultation med en av våra prominenta återförsäljare.</p>
-            <button class="green-button conf-modal-option button-hover">
+            <div class="green-button a-button conf-modal-option button-hover">
                 <span>Boka kostnadsfri konsultation</span>
                 <i class="material-icons">forward</i>
-            </button>
+            </div>
             <p class="enter-mail-text">Eller skriv in din mail och hämta produktblad</p>
             <div class="front-hero-inputs email-inputs">
                 <?php echo do_shortcode('[contact-form-7 id="170" title="Hämta broschyr"]') ; ?>

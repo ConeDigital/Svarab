@@ -3,11 +3,10 @@
     <div class="hero single-hero front-hero background-img" style="background-image: url('<?php  the_post_thumbnail_url(); ?>')">
         <h1><?php the_title() ; ?></h1>
         <p><?php the_field('hero-sub') ; ?></p>
-        <button class="button-hover">
+        <a href="<?php echo esc_url(home_url('/valj-ratt')); ?>" class="button-hover a-button">
             <i class="material-icons">launch</i>
             <span>Testa vår produktgenerator</span>
-            <a href="<?php echo esc_url(home_url('/valj-ratt')); ?>"></a>
-        </button>
+        </a>
 <!--        <div class="front-hero-inputs email-inputs">-->
 <!--<!--            <input type="email" placeholder="Din email adress"/>-->
 <!--<!--            <button>Hämta ner guide</button>-->
@@ -58,11 +57,10 @@
                     <p><i class="material-icons">check</i><?php the_sub_field('pro') ; ?></p>
                 <?php endwhile; ?>
             <?php endif; ?>
-            <button class="button-hover">
+            <a href="<?php echo esc_url(home_url('/produkter')); ?>" class="button-hover a-button">
                 <i class="material-icons">launch</i>
                 <span>Läs mer om våra system</span>
-                <a href="<?php echo esc_url(home_url('/produkter')); ?>"></a>
-            </button>
+            </a>
         </div>
     </section>
     <section class="related-posts guides-section">

@@ -42,17 +42,17 @@
             </div>
             <div class="footer-social">
                 <div class="footer-icon">
-                    <a href="#"></a>
+                    <a target="_blank" href="https://www.facebook.com/SvenskAvloppsrening/?fref=ts"></a>
                     <svg width="30px" height="30px" shape-rendering="geometricPrecision">
                         <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?>#facebook"></use>
                     </svg>
                 </div>
-                <div class="footer-icon">
-                    <a href="#"></a>
-                    <svg width="30px" height="30px" shape-rendering="geometricPrecision">
-                        <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?>#twitter"></use>
-                    </svg>
-                </div>
+<!--                <div class="footer-icon">-->
+<!--                    <a href="#"></a>-->
+<!--                    <svg width="30px" height="30px" shape-rendering="geometricPrecision">-->
+<!--                        <use xlink:href="--><?php //echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?><!--#twitter"></use>-->
+<!--                    </svg>-->
+<!--                </div>-->
             </div>
         </div>
     </footer>

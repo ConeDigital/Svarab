@@ -1,6 +1,6 @@
 jQuery(document).ready( function($) {
 
-    $('.retailer-contact a, .book-kommun button').on('click', function(){
+    $('.retailer-contact a, .a-button').on('click', function(){
         event.preventDefault();
         //If modal is accessed from retailer
         if( !$(this).hasClass('button-hover') ){

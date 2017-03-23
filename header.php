@@ -46,8 +46,14 @@
             <a href="<?php echo esc_url(home_url('/aterforsaljare'))?>">Återförsäljare</a>
             <a href="<?php echo esc_url(home_url('/guider'))?>">Artiklar</a>
             <div class="contact-menu-info">
-                <a href="#"><i class="material-icons">local_phone</i> 010-141 88 66</a>
+                <a href="#"><i class="material-icons">local_phone</i> 08-83 64 22</a>
                 <a href="mailto:info@svarab.se"><i class="material-icons">email</i> info@svarab.se</a>
+                <div class="footer-icon header-social">
+                    <a target="_blank" href="https://www.facebook.com/SvenskAvloppsrening/?fref=ts"></a>
+                    <svg width="30px" height="30px" shape-rendering="geometricPrecision">
+                        <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?>#facebook"></use>
+                    </svg>
+                </div>
             </div>
         </div>
     </div>

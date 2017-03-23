@@ -410,7 +410,7 @@ a {
   color: #5091BD;
   text-decoration: none; }
 
-button {
+button, .a-button {
   height: 50px;
   -webkit-border-radius: 2px;
           border-radius: 2px;
@@ -483,6 +483,27 @@ blockquote {
   @media (max-width: 900px) {
     .contact-menu {
       display: none; } }
+
+.header-social {
+  position: absolute !important;
+  top: 34px;
+  right: 49px;
+  height: 30px;
+  width: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 !important;
+  cursor: pointer; }
+  .header-social a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0 !important;
+    z-index: 10; }
 
 .contact-menu-content {
   display: -webkit-box;
@@ -1220,8 +1241,10 @@ EFFECTS STYLING
   width: 100%;
   padding: 0;
   margin: 0;
-  height: 100%;
-  overflow: scroll; }
+  height: 100%; }
+  @media (max-width: 600px) {
+    .under-menu {
+      overflow: scroll; } }
   .under-menu::-webkit-scrollbar {
     display: none; }
   .under-menu li {
@@ -2447,12 +2470,12 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
     .front-hero {
       min-height: -webkit-calc(100vh - 124px);
       min-height: calc(100vh - 124px); } }
-  .front-hero button {
+  .front-hero .a-button {
     width: 225px;
     font-weight: 700;
     margin-top: 34px;
     font-size: 14px; }
-    .front-hero button a {
+    .front-hero .a-button a {
       width: 100%;
       height: 100%;
       left: 0;
@@ -2642,19 +2665,14 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
       @media (max-width: 500px) {
         .front-third-right p i {
           margin-right: 10px; } }
-  .front-third-right button {
+  .front-third-right .a-button {
     color: #5091BD;
     background: white;
     position: relative;
     width: 178px;
     font-weight: bold;
-    margin-top: 26px; }
-    .front-third-right button a {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%; }
+    margin-top: 26px;
+    display: block; }
 
 .review-swiper {
   width: 100%;
@@ -3025,11 +3043,12 @@ footer {
     line-height: 34px;
     color: #FFFFFF;
     font-family: "Roboto", sans-serif; }
-  .book-kommun button {
+  .book-kommun .a-button {
     width: 100%;
     background: #5FC55F;
     text-transform: uppercase;
-    margin-top: 16px; }
+    margin-top: 16px;
+    cursor: pointer; }
 
 .right-section-links {
   margin-top: 60px; }
@@ -3347,3 +3366,8 @@ footer {
   right: 15px;
   font-size: 24px;
   color: #8e8e8e; }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+  .under-menu {
+    -ms-overflow-style: none; } }
