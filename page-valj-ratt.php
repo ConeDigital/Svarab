@@ -114,7 +114,7 @@
                 systemet <span class="product-suggestion">Oxyfix</span>
             </h2>
             <a class="product-config-link" data-both="<?php echo esc_url( home_url('/produkter/') ) ?>" data-value="<?php echo esc_url( home_url('/products/') ) ?>" href="<?php echo esc_url( home_url('/produkter/') ) ?>">Läs mer om <span class="product-suggestion">Oxyfix</span></a>
-            <p>Boka en kostnadsfri konsultation med en av våra prominenta återförsäljare.</p>
+            <p>Boka en kostnadsfri konsultation med en av våra certifierade återförsäljare.</p>
             <div class="green-button a-button conf-modal-option button-hover">
                 <span>Boka kostnadsfri konsultation</span>
                 <i class="material-icons">forward</i>

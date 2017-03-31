@@ -37,8 +37,9 @@
         <div class="footer-border"></div>
         <div class="footer-lower-section">
             <div class="footer-search">
-                <input type="search" placeholder="Sök" />
-                <i class="material-icons">search</i>
+                <?php echo get_search_form( ); ?>
+<!--                <input type="search" placeholder="Sök" />-->
+<!--                <i class="material-icons">search</i>-->
             </div>
             <div class="footer-social">
                 <div class="footer-icon">
