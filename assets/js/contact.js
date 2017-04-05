@@ -1,7 +1,9 @@
+var firefox  = navigator.userAgent.indexOf('Firefox') > -1;
+
 jQuery(document).ready( function($) {
 
-    $('.retailer-contact a, .book-kommun button').on('click', function(){
-        event.preventDefault();
+    $('.retailer-contact a, .book-kommun button').on('click', function(e){
+        e.preventDefault();
         //If modal is accessed from retailer
         if( !$(this).hasClass('button-hover') ){
         	//Get retailer email
@@ -21,16 +23,17 @@ jQuery(document).ready( function($) {
 
     //Close modal on click outside or esc
     $(document).on('click', function(event) {
-    	
-    	//Get DOM-element of container
-    	var element = $('.contact-retailer-modal')[0];
+    	if(!firefox){
+        	//Get DOM-element of container
+        	var element = $('.contact-retailer-modal')[0];
 
-    	//If clicked object isnt <a> or <i> and clicked element isnt in container
-    	if( event.target.tagName != 'A' && event.target.tagName != 'I' && ! $.contains(element, event.toElement) ){
-    		//Hide container
-    		$('.close-c-modal').click();
-            $('.contact-retailer-modal .inputs').val('');
-    	} 
+        	//If clicked object isnt <a> or <i> and clicked element isnt in container
+        	if( event.target.tagName != 'A' && event.target.tagName != 'I' && ! $.contains(element, event.toElement) ){
+        		//Hide container
+        		$('.close-c-modal').click();
+                $('.contact-retailer-modal .inputs').val('');
+        	} 
+        }
 	});
 
     $(document).on('keyup', function(event) {
