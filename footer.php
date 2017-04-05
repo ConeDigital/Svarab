@@ -27,8 +27,9 @@
             <div class="footer-content">
                 <p>Kontakta oss</p>
                 <div class="footer-links">
-                    <a href="#">(+46) 08 540 66 11</a>
-                    <a href="#">Kundsupport</a>
+                    <a href="#">08-83 64 22</a>
+                    <a href="mailto:info@svarab.se">info@svarab.se</a>
+<!--                    <a href="#">Kundsupport</a>-->
                     <a href="<?php echo esc_url(home_url('/aterforsaljare'))?>">Återförsäljare</a>
                 </div>
             </div>
@@ -36,22 +37,23 @@
         <div class="footer-border"></div>
         <div class="footer-lower-section">
             <div class="footer-search">
-                <input type="search" placeholder="Sök" />
-                <i class="material-icons">search</i>
+                <?php echo get_search_form( ); ?>
+<!--                <input type="search" placeholder="Sök" />-->
+<!--                <i class="material-icons">search</i>-->
             </div>
             <div class="footer-social">
                 <div class="footer-icon">
-                    <a href="#"></a>
+                    <a target="_blank" href="https://www.facebook.com/SvenskAvloppsrening/?fref=ts"></a>
                     <svg width="30px" height="30px" shape-rendering="geometricPrecision">
                         <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?>#facebook"></use>
                     </svg>
                 </div>
-                <div class="footer-icon">
-                    <a href="#"></a>
-                    <svg width="30px" height="30px" shape-rendering="geometricPrecision">
-                        <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?>#twitter"></use>
-                    </svg>
-                </div>
+<!--                <div class="footer-icon">-->
+<!--                    <a href="#"></a>-->
+<!--                    <svg width="30px" height="30px" shape-rendering="geometricPrecision">-->
+<!--                        <use xlink:href="--><?php //echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?><!--#twitter"></use>-->
+<!--                    </svg>-->
+<!--                </div>-->
             </div>
         </div>
     </footer>

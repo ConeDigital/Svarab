@@ -77,11 +77,12 @@
     color: #FFFFFF;
     font-family: $roboto;
   }
-  button{
+  .a-button{
     width: 100%;
     background: #5FC55F;
     text-transform: uppercase;
     margin-top: 16px;
+    cursor: pointer;
   }
 }
 

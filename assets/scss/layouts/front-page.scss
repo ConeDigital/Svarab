@@ -5,10 +5,11 @@
     min-height: calc(100vh - 124px);
   }
 
-  button{
-    width: 178px;
+  .a-button{
+    width: 225px;
     font-weight: 700;
     margin-top: 34px;
+    font-size: 14px;
 
     a{
       width: 100%;
@@ -107,9 +108,14 @@
 .front-second{
   align-items: center;
   min-height: 215px;
+  padding: 7em 4em 0 4em;
 
-  @include breakpoint(medium) {
-    flex-direction: column;
+  @include breakpoint(desktop) {
+    padding: 5em 2em 0 2em;
+  }
+
+  @include breakpoint(mobile) {
+    padding: 3em 1em 0 1em;
   }
 
   p{
@@ -130,7 +136,8 @@
 }
 
 .front-second-content{
-  max-width: 800px;
+  //max-width: 800px;
+  width: 100%;
 }
 
 .big-question{
@@ -221,20 +228,124 @@
       }
     }
   }
-  button{
+  .a-button{
     color: $blue;
     background: white;
     position: relative;
     width: 178px;
     font-weight: bold;
     margin-top: 26px;
+    display: block;
+  }
+}
 
-    a{
-      position: absolute;
-      left: 0;
-      top:0;
-      width: 100%;
-      height: 100%;
+.review-swiper{
+  width: 100%;
+  padding-bottom: 7em;
+
+  .swiper-slide{
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(mobile) {
+      flex-direction: column;
+      align-items: center;
     }
+  }
+
+  .swiper-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 35px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: transparent;
+    border: 1px solid #90dfaa;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.review-left{
+  display: table;
+  //flex-direction: column;
+
+  @include breakpoint(desktop) {
+    //min-width: 200px;
+  }
+  @include breakpoint(mobile) {
+    align-items: center;
+    margin-bottom: 25px;
+
+  }
+
+  span:last-child{
+    font-weight: 600;
+  }
+
+  span{
+    font-family: $roboto;
+    font-size: 12px;
+    line-height: 16px;
+    color: #4A4A4A;
+    display: table;
+    //min-width: 75px;
+
+    @include breakpoint(mobile) {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+.review-img{
+  width: 85px;
+  height: 85px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 100%;
+  margin-bottom: 12px;
+
+  @include breakpoint(mobile) {
+    margin: 0 auto 12px auto;
+
+  }
+}
+
+.review-right{
+  //max-width: 340px;
+  margin-left: 50px;
+  position: relative;
+  padding-right: 35px;
+  width: 100%;
+
+  @include breakpoint(desktop) {
+    max-width: 100%;
+  }
+  @include breakpoint(mobile) {
+    text-align: center;
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  img{
+    position: absolute;
+    z-index: 0;
+    left: -31px;
+    top: -6px;
+
+    @include breakpoint(mobile) {
+      left: 0;
+    }
+  }
+
+  p{
+    margin: 0;
+    font-size: 20px;
+    line-height: 33px;
+    color: #000000;
+    position: relative;
   }
 }

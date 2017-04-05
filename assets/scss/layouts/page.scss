@@ -126,7 +126,7 @@
   display: none;
   z-index: 1;
 
-  @include breakpoint(medium) {
+  @include breakpoint(mobile) {
     display: block;
   }
 }
@@ -139,7 +139,7 @@
   display: none;
   color: $blue;
 
-  @include breakpoint(medium) {
+  @include breakpoint(mobile) {
     display: block;
   }
 }
@@ -147,6 +147,7 @@
 .menu-secondary-menu-container{
   max-width: 800px;
   width: 100%;
+  height: 100%;
 }
 
 .under-menu{
@@ -157,9 +158,12 @@
   padding: 0;
   margin: 0;
   height: 100%;
-  overflow: scroll;
 
-  &::-webkit-scrollbar {
+  @include breakpoint(small) {
+    overflow: scroll;
+  }
+
+    &::-webkit-scrollbar {
     display: none;
   }
 
@@ -486,4 +490,17 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
 }
 .margin-bottom-none{
   margin-bottom: 0;
+}
+
+.menu-product-menu-container{
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+}
+
+.search-result{
+  a{
+    display: block;
+    margin-bottom: 30px;
+  }
 }
