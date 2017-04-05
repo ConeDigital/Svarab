@@ -321,7 +321,7 @@ header{
     display: none;
   }
 
-  div{
+  .a-button{
     width: 167px;
     height: 40px;
     background-color: #367CA1;
@@ -330,33 +330,12 @@ header{
     text-align: center;
     line-height: 12px;
     color: #FFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
-    position: relative;
-    overflow: hidden;
-
-    &:hover{
-      i{
-        top:8px;
-      }
-      span{
-        margin-bottom: -30%;
-      }
-    }
-  }
-  span{
-    transition: 0.2s ease-in-out;
 
   }
   i{
-    position: absolute;
-    top: -24px;
-    left: 71.5px;
-    transition: 0.2s ease-in-out;
     transform: rotate(180deg);
   }
 }

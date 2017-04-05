@@ -716,7 +716,7 @@ header {
   @media (max-width: 900px) {
     .header-button {
       display: none; } }
-  .header-button div {
+  .header-button .a-button {
     width: 167px;
     height: 40px;
     background-color: #367CA1;
@@ -726,36 +726,10 @@ header {
     text-align: center;
     line-height: 12px;
     color: #FFF;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
     text-transform: uppercase;
     font-weight: bold;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden; }
-    .header-button div:hover i {
-      top: 8px; }
-    .header-button div:hover span {
-      margin-bottom: -30%; }
-  .header-button span {
-    -webkit-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out; }
+    cursor: pointer; }
   .header-button i {
-    position: absolute;
-    top: -24px;
-    left: 71.5px;
-    -webkit-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
             transform: rotate(180deg); }

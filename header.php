@@ -67,11 +67,12 @@
             <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'walker' => $walker ) ); ?>
         </div>
         <div class="header-button">
-            <div>
-                <span>Mer info</span>
+            <a href="<?php echo esc_url(home_url('/valj-ratt')); ?>" class="button-hover a-button">
                 <i class="material-icons">forward</i>
-            </div>
+                <span>Mer info</span>
+            </a>
         </div>
+
         <button class="hamburger hamburger--spin" type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
