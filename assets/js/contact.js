@@ -2,7 +2,7 @@ var firefox  = navigator.userAgent.indexOf('Firefox') > -1;
 
 jQuery(document).ready( function($) {
 
-    $('.retailer-contact a, .book-kommun button').on('click', function(e){
+    $('.retailer-contact a, .book-kommun .a-button').on('click', function(e){
         e.preventDefault();
         //If modal is accessed from retailer
         if( !$(this).hasClass('button-hover') ){
