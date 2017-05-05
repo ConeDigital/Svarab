@@ -2067,6 +2067,10 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
     max-width: 550px;
     font-family: "Roboto", sans-serif; }
 
+#step5 div.wpcf7-validation-errors {
+  position: absolute;
+  top: 36px; }
+
 .green-button {
   background: #5FC55F;
   width: 227px; }
