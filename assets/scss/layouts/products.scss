@@ -110,17 +110,18 @@
 .no-touch #cd-vertical-nav {
   /*fix the navigation*/
   position: fixed;
-  right: 4em;
-  top: 50%;
+  left: 4em;
+  top: 126px;
   bottom: auto;
-  transform: translateY(-50%);
-  z-index: 10;
+  transform: none;
+  z-index: 2;
+  right: auto;
 
   @include breakpoint(large) {
-    right: 2em;
+    left: 2em;
   }
   @include breakpoint(desktop) {
-    right: 1em;
+    display: none;
   }
   @include breakpoint(laptop) {
     display: none;
@@ -128,30 +129,36 @@
 
   ul{
     list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li{
+    text-align: left;
   }
 }
 
 .no-touch #cd-vertical-nav a span {
-  float: right;
+  float: left;
   /*scale down navigation dots and labels*/
   transform: scale(1);
 
-  &:hover{
-    transform: scale(1.2);
-  }
+  //&:hover{
+  //  transform: scale(1.2);
+  //}
 }
-
-.no-touch #cd-vertical-nav .cd-dot {
-  transform-origin: 50% 50%;
-  top: 10px;
-  background-color: $blue;
-  width: 8px;
-  height: 8px;
-}
-
-.no-touch #cd-vertical-nav a.is-selected .cd-dot {
-  background-color: #212121;
-}
+//
+//.no-touch #cd-vertical-nav .cd-dot {
+//  transform-origin: 50% 50%;
+//  top: 10px;
+//  background-color: $blue;
+//  width: 8px;
+//  height: 8px;
+//}
+//
+//.no-touch #cd-vertical-nav a.is-selected .cd-dot {
+//  background-color: #212121;
+//}
 
 .no-touch #cd-vertical-nav a.is-selected .cd-label {
   color: $blue;
@@ -160,20 +167,20 @@
 .no-touch #cd-vertical-nav .cd-label {
   transform-origin: 100% 50%;
   font-size: 14px;
-  color: #8e8e8e;
-  //opacity: 1;
+  color: #343E47;
+  opacity: 1;
   margin-right: 0;
 }
 
-.no-touch #vertical-nav a:hover span {
-  /*scale up navigation dots and labels*/
-  transform: scale(1);
-}
+//.no-touch #vertical-nav a:hover span {
+//  /*scale up navigation dots and labels*/
+//  transform: scale(1);
+//}
 
-.no-touch #cd-vertical-nav a:hover .cd-label {
-  /*show labels*/
-  opacity: 1;
-}
+//.no-touch #cd-vertical-nav a:hover .cd-label {
+//  /*show labels*/
+//  opacity: 1;
+//}
 
 
 .touch #cd-vertical-nav {

@@ -16,13 +16,13 @@
             <div class="conf-modal-options">
                 <div class="conf-modal-option">
                     <div class="conf-modal-img c-m-big-img">
-                        <img src="<?php echo esc_url(home_url('/wp-content/themes/svarab/assets/images/snowman@2x.png')); ?>">
+                        <img src="<?php echo esc_url(home_url('/wp-content/themes/svarab/assets/images/villa.jpg')); ?>">
                     </div>
                     <p>Permanentboende</p>
                 </div>
                 <div class="conf-modal-option">
                     <div class="conf-modal-img c-m-big-img">
-                        <img src="<?php echo esc_url(home_url('/wp-content/themes/svarab/assets/images/farm@2x.png')); ?>">
+                        <img src="<?php echo esc_url(home_url('/wp-content/themes/svarab/assets/images/summer.jpg')); ?>">
                     </div>
                     <p>Fritidshus</p>
                 </div>

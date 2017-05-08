@@ -5,25 +5,21 @@
     <ul>
         <li>
             <a href="#section1" data-number="1">
-                <span class="cd-dot"></span>
                 <span class="cd-label">Produktinformation</span>
             </a>
         </li>
         <li>
             <a href="#section2" class="black-dot" data-number="2">
-                <span class="cd-dot"></span>
                 <span class="cd-label">Underhåll</span>
             </a>
         </li>
         <li>
             <a href="#section3" class="black-dot" data-number="3">
-                <span class="cd-dot"></span>
                 <span class="cd-label">Produktblad</span>
             </a>
         </li>
         <li>
             <a href="#section4" class="black-dot" data-number="4">
-                <span class="cd-dot"></span>
                 <span class="cd-label">Intresseförfrågan</span>
             </a>
         </li>

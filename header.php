@@ -67,12 +67,14 @@
             <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'walker' => $walker ) ); ?>
         </div>
         <div class="header-button">
+            <a target="_blank" href="https://www.facebook.com/SvenskAvloppsrening/?fref=ts" class="fb-header-link">
+                <img src="<?php echo esc_url(home_url('/wp-content/themes/svarab/assets/images/simpleFB.png')); ?>" />
+            </a>
             <a href="<?php echo esc_url(home_url('/valj-ratt')); ?>" class="button-hover a-button">
                 <i class="material-icons">forward</i>
                 <span>Mer info</span>
             </a>
         </div>
-
         <button class="hamburger hamburger--spin" type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>

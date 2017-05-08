@@ -102,7 +102,7 @@ jQuery(document).ready( function($) {
         $(this).children('.material-icons').toggleClass('rotate');
     });
 
-    $('.header-button').on('click', function(event) {
+    $('.header-button .a-button').on('click', function(event) {
         event.preventDefault();
         $('.dark-overlay').fadeIn('fast');
         $('.contact-menu').css("transform", "translateX(100%)" );

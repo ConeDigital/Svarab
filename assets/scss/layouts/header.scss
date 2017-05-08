@@ -316,9 +316,22 @@ header{
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: relative;
 
   @include breakpoint(laptop) {
     display: none;
+  }
+
+  .fb-header-link{
+    position: absolute;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+
+    img{
+      width: 100%;
+    }
   }
 
   .a-button{
