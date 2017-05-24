@@ -1793,7 +1793,9 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
   position: relative; }
 
 .conf-start {
-  text-align: center; }
+  text-align: center;
+  max-width: 600px;
+  padding: 0 15px; }
   .conf-start h1 {
     font-size: 42px;
     line-height: 46px;
@@ -2079,7 +2081,7 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
     max-width: 550px;
     font-family: "Roboto", sans-serif; }
 
-#step5 div.wpcf7-validation-errors {
+#step5 div.wpcf7-response-output {
   position: absolute;
   top: 36px; }
 
@@ -3069,7 +3071,23 @@ footer {
     display: -ms-flexbox;
     display: flex;
     padding: 9px 0;
-    border-bottom: 1px solid #dfdfdf; }
+    border-bottom: 1px solid #dfdfdf;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .right-section-links span {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 10px;
+    line-height: 1; }
+    .right-section-links span i {
+      font-size: 11px;
+      margin-right: 5px;
+      color: #838383; }
 
 .hero-product h1 {
   max-width: 100%; }

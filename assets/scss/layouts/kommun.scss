@@ -112,6 +112,18 @@
     display: flex;
     padding: 9px 0;
     border-bottom: 1px solid #dfdfdf;
+    flex-direction: column;
   }
 
+  span{
+    display: flex;
+    font-size: 10px;
+    line-height: 1;
+
+    i{
+      font-size: 11px;
+      margin-right: 5px;
+      color: #838383;
+    }
+  }
 }

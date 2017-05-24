@@ -25,10 +25,12 @@
         </div>
         <div class="right-section-links">
             <h5>Länkar</h5>
-            <a href="<?php echo esc_url(home_url('/valj-ratt')); ?>">Produktgenerator</a>
-            <a href="<?php echo esc_url(home_url('/produkter')); ?>">Produkter & garantiregistrering</a>
-            <a href="<?php echo esc_url(home_url('/aterforsaljare')); ?>">Våra återförsäljare</a>
-            <a href="<?php echo esc_url(home_url('/kontakta-oss')); ?>">Kontakta oss</a>
+            <?php $loop = new WP_Query( array( 'post_type' => 'guides', 'posts_per_page' => 4)); ?>
+            <?php if ( $loop->have_posts() ) : ?>
+                <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                    <a href="<?php echo get_the_permalink() ; ?>"><?php the_title() ?></a>
+                <?php endwhile; ?>
+            <?php endif; ?>
         </div>
     </div>
 </section>

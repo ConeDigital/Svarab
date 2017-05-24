@@ -39,6 +39,18 @@
                     <i class="material-icons">mail_outline</i>
                 </div>
             </div>
+            <?php $loop = new WP_Query( array( 'post_type' => 'post', 'category_name' => $kommun,  'posts_per_page' => -1)); ?>
+            <?php if ( $loop->have_posts() ) : ?>
+            <div class="right-section-links">
+                <h5>Nyheter relaterade till <?php echo $kommun ; ?></h5>
+                <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                    <a href="<?php echo get_the_permalink() ; ?>">
+                        <span><i class="material-icons">date_range</i><?php the_date('j M, Y') ; ?></span>
+                        <?php the_title() ?>
+                    </a>
+                <?php endwhile ; ?>
+            </div>
+            <?php endif ; ?>
             <div class="right-section-links">
                 <h5>Länkar</h5>
                 <?php $loop = new WP_Query( array( 'post_type' => 'guides', 'posts_per_page' => 4)); ?>

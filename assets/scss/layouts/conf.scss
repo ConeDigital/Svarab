@@ -9,6 +9,8 @@
 
 .conf-start{
   text-align: center;
+  max-width: 600px;
+  padding: 0 15px;
   h1{
     font-size: 42px;
     line-height: 46px;
@@ -277,7 +279,7 @@
 }
 
 #step5{
-  div.wpcf7-validation-errors{
+  div.wpcf7-response-output{
     position: absolute;
     top: 36px;
   }

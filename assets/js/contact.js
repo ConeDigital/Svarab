@@ -14,11 +14,23 @@ jQuery(document).ready( function($) {
         }
         //Show modal
         $('.contact-retailer-modal').show();
+        if ($(window).width() < 800) {
+            $("html, body").css({
+                height: '100%',
+                overflow: 'hidden',
+                position: 'relative'
+            });
+        }
     });
 
     $('.close-c-modal').on('click', function(){
     	$('.contact-retailer-modal').hide();
-        
+        if ($(window).width() < 800) {
+            $("html, body").css({
+                height: 'auto',
+                overflow: 'visible'
+            });
+        }
     });
 
     //Close modal on click outside or esc
