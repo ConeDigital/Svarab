@@ -31,6 +31,13 @@ jQuery(document).ready( function($) {
         currentStep = 1;
         //Show modal
         $('.conf-modal').fadeIn('slow');//attr('style', '');
+        if ($(window).width() < 800) {
+            $("html, body").css({
+                height: '100%',
+                overflow: 'hidden',
+                position: 'relative'
+            });
+        }
         //console.log(currentStep);
     });
 
@@ -77,6 +84,13 @@ jQuery(document).ready( function($) {
 
         //Show current modal content
         $(step).fadeIn('slow');//attr('style', '');
+        if ($(window).width() < 800) {
+            $("html, body").css({
+                height: '100%',
+                overflow: 'hidden',
+                position: 'relative'
+            });
+        }
 
     });
 
@@ -113,6 +127,12 @@ jQuery(document).ready( function($) {
         //Show step 1 when start button is clicked
         var step = '#step' + currentStep;
         $(step).attr('style', '');
+        if ($(window).width() < 800) {
+            $("html, body").css({
+                height: 'auto',
+                overflow: 'visible'
+            });
+        }
 
     });
     

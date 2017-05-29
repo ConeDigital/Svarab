@@ -365,6 +365,7 @@
     justify-content: flex-start;
     height: calc(100% - 8em);
     padding: 4em 2em 4em;
+    -webkit-overflow-scrolling: touch;
   }
 
 }

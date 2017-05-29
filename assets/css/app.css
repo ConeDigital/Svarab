@@ -792,7 +792,8 @@ header {
         padding: 20px 1em 40px 1em;
         height: -webkit-calc(100% - 60px);
         height: calc(100% - 60px);
-        overflow: scroll; } }
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch; } }
 
 .close-c-modal {
   position: absolute;
@@ -2152,7 +2153,8 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
             justify-content: flex-start;
     height: -webkit-calc(100% - 8em);
     height: calc(100% - 8em);
-    padding: 4em 2em 4em; } }
+    padding: 4em 2em 4em;
+    -webkit-overflow-scrolling: touch; } }
 
 .top-modal, .bottom-modal {
   width: 100%;
