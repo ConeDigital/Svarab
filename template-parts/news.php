@@ -14,10 +14,12 @@
                 <?php $smallexcerpt = get_the_excerpt(); ?>
                 <div class="related-post-grid  ">
                     <a href="<?php echo get_permalink(); ?>"></a>
-                    <div class="background-img related-post-img" style="background-image: url('<?php  the_post_thumbnail_url('large'); ?>')"></div>
+                    <?php if ( has_post_thumbnail() ) : ?>
+                        <div class="background-img related-post-img" style="background-image: url('<?php the_post_thumbnail_url('large') ?>')"></div>
+                    <?php endif ; ?>
                     <div class="related-post-grid-text">
                         <h4><?php the_title(); ?></h4>
-                        <p><?php   echo wp_trim_words( $smallexcerpt , '17' ); ?></p>
+                        <p><?php echo wp_trim_words( $smallexcerpt , '17' ); ?></p>
                     </div>
                 </div>
             <?php endwhile; ?>

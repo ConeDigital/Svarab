@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
-    <link rel="icon" href="<?php echo esc_url(home_url( '/wp-content/themes/svarab/assets/images/favicon.png' ) ); ?>">
+    <link rel="icon" href="<?php echo esc_url(home_url( '/wp-content/themes/svarab/assets/images/svarabfav.png' ) ); ?>">
     <title><?php wp_title( '', true, 'right' ); ?></title>
 
     <?php cone_og_meta_tags(); ?>

@@ -48,6 +48,7 @@
                         <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?>#facebook"></use>
                     </svg>
                 </div>
+                <span>Skapad av <a target="_blank" href="https://cone.digital/">Cone Digital</a>, en webbyrå i Stockholm</span>
 <!--                <div class="footer-icon">-->
 <!--                    <a href="#"></a>-->
 <!--                    <svg width="30px" height="30px" shape-rendering="geometricPrecision">-->

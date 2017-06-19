@@ -113,6 +113,7 @@ footer{
 .footer-social{
   display: flex;
   position: relative;
+  flex-direction: column;
 
   a{
     position: absolute;
@@ -121,24 +122,34 @@ footer{
     left: 0;
     top: 0;
     z-index: 2;
+  }
+  span{
+    font-size: 11px;
+    color: #9b9b9b;
+    padding-top: 10px;
+    text-align: right;
+
+    a{
+      position: relative;
+      text-decoration: underline;
     }
   }
-  .footer-icon{
-    position: relative;
-    margin-right: 23px;
+}
+.footer-icon{
+  position: relative;
+  text-align: right;
 
-    @include breakpoint(mobile) {
-      margin-right: 0;
-      margin-left: 18px;
-    }
-
-    &:hover{
-      svg{
-        filter: grayscale(0);
-        opacity: 1;
-      }
+  @include breakpoint(mobile) {
+    margin-right: 0;
+    margin-left: 18px;
   }
 
+  &:hover{
+    svg{
+      filter: grayscale(0);
+      opacity: 1;
+    }
+  }
   svg{
     filter: grayscale(100%);
     opacity: 0.6;
