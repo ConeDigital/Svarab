@@ -46,9 +46,9 @@
                 </div>
                 <div class="conf-modal-option conf-choice" data-option="2">
                     <div class="conf-modal-img c-m-i-small-img">
-                        <h4>3</h4>
+                        <h4>3+</h4>
                     </div>
-                    <p>3 hushåll</p>
+                    <p>3+ hushåll</p>
                 </div>
             </div>
         </div>
