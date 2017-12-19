@@ -75,7 +75,7 @@
                                     echo $category->cat_name . ' ';
                                 } ?>
                             </p>
-                            <input type="hidden" class="hidden-retailer-email" value="<?php the_field('retailer-email') ?>">
+                            <input type="hidden" class="hidden-retailer-email" value="<?php the_title() ; ?>">
                             <a href="#">Kontakta</a>
                         </div>
                     </div>
