@@ -133,4 +133,35 @@ jQuery(document).ready( function($) {
             },
         }
     });
+
+    //Open contact-modal
+    $('.contact-modal-button').on('click', function (e) {
+        e.preventDefault();
+        $('.contact-modal').css("transform", "translateX(0%)" );
+    });
+
+    //Close contact modal
+    $('.contact-modal-header i').on('click', function() {
+        $('.contact-modal').css("transform", "translateX(100%)" );
+    });
+
+    //Show right contact-form
+    $('.show-consultation-form-link').on('click', function (e) {
+        e.preventDefault();
+        $('.show-contact-modal-link').removeClass('link-is-active');
+        $(this).addClass('link-is-active');
+        $('.show-contact-modal').fadeOut('fast');
+        setTimeout(function(){
+            $('.show-consultation-form').fadeIn();
+        }, 300);
+    });
+    $('.show-other-form-link').on('click', function (e) {
+        e.preventDefault();
+        $('.show-contact-modal-link').removeClass('link-is-active');
+        $(this).addClass('link-is-active');
+        $('.show-contact-modal').fadeOut('fast');
+        setTimeout(function(){
+            $('.show-other-form').fadeIn();
+        }, 300);
+    });
 });

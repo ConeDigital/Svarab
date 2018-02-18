@@ -421,6 +421,181 @@ header{
   }
 }
 
+.contact-modal-button{
+  width: 80px;
+  height: 80px;
+  background-color: #5FC55F;
+  border-radius: 100%;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 12px;
+  color: #FFF;
+  cursor: pointer;
+  position: fixed !important;
+  right: 4em;
+  bottom: 4em;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,.4);
+  font-family: $futura;
+  z-index: 3;
+  box-sizing: border-box;
+
+  @include breakpoint(desktop) {
+    right: 2em;
+  }
+
+  @include breakpoint(mobile) {
+    right: 1em;
+    width: 60px;
+    height: 60px;
+    font-size: 10px;
+  }
+}
+
+.contact-modal{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 102;
+  width: 100%;
+  max-width: 360px;
+  background: white;
+  height: 100vh;
+  box-sizing: border-box;
+  border-left: 1px solid #e2e2e2;
+  transform: translateX(100%);
+  transition: 0.2s linear;
+
+  @include breakpoint(mobile) {
+    max-width: 100%;
+  }
+}
+
+.contact-modal-header{
+  border-bottom: 1px solid #e2e2e2;
+  box-shadow: 0 1px 0.8rem rgba(0,0,0,.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1rem;
+
+  i{
+    color: #9a9a9a;
+    font-size: 30px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover{
+      color: $blue;
+    }
+  }
+}
+
+.contact-modal-header-left{
+  display: flex;
+  align-items: center;
+
+  img{
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  p{
+    margin: 0;
+    font-weight: bold;
+    color: #343E47;
+    font-family: $roboto;
+  }
+}
+
+.contact-modal-content{
+  padding: 1rem 1rem 6rem;
+  box-sizing: border-box;
+  overflow: scroll;
+  height: 100%;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  p{
+    font-family: $roboto;
+    color: #333;
+  }
+
+}
+
+.contact-modal-links{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include breakpoint(mobile) {
+    justify-content: flex-start;
+  }
+
+  a{
+    border-radius: 100px;
+    border: 1px solid $blue;
+    padding: 6px 20px;
+    font-size: 14px;
+    transition: 0.2s ease-in-out;
+
+    @include breakpoint(mobile) {
+      &:first-child{
+        margin-right: 20px;
+      }
+    }
+
+    &:hover{
+      background: $blue;
+      color: white;
+    }
+  }
+
+  .link-is-active{
+    background: $blue;
+    color: white;
+  }
+}
+
+.show-contact-modal{
+  display: none;
+  margin-top: 40px;
+
+  label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-family: $roboto;
+    margin-bottom: 30px;
+
+  }
+
+  input, textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    outline: none;
+    padding: 6px 0 2px 0;
+    font-size: 16px;
+  }
+  input[type=submit]{
+    border: none;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-family: $roboto;
+    background-color: #5FC55F;
+    font-weight: bold;
+  }
+}
+
+
+
 /*--------------------------------------------
 
   Hamburger styling

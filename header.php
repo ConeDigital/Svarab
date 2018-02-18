@@ -86,4 +86,30 @@
     <div class="menu-section">
         <?php wp_nav_menu( array( 'theme_location' => 'mobile', 'menu_class' => 'mobile-menu' ) ); ?>
     </div>
+    <a href="#" class="button-hover a-button contact-modal-button">
+        <i class="material-icons">email</i>
+        <span>Kontakt</span>
+    </a>
+    <div class="contact-modal">
+        <div class="contact-modal-header">
+            <div class="contact-modal-header-left">
+                <img src="<?php echo esc_url(home_url( '/wp-content/themes/svarab/assets/images/svarabfav.png' ) ); ?>">
+                <p>08-83 64 22</p>
+            </div>
+            <i class="material-icons">close</i>
+        </div>
+        <div class="contact-modal-content">
+            <p>Välj ett alternativ nedan för att få så bra hjälp som möjligt</p>
+            <div class="contact-modal-links">
+                <a class="show-contact-modal-link show-consultation-form-link" href="#">Boka kostandsfri konsultation</a>
+                <a class="show-contact-modal-link show-other-form-link" href="#">Kontakt</a>
+            </div>
+            <div class="show-contact-modal show-consultation-form">
+                <?php echo do_shortcode('[contact-form-7 id="179" title="Sidebar Boka Konsultation"]') ; ?>
+            </div>
+            <div class="show-contact-modal show-other-form">
+                <?php echo do_shortcode('[contact-form-7 id="166" title="Sidebar övrigt"]') ; ?>
+            </div>
+        </div>
+    </div>
     <div class="all-content">
