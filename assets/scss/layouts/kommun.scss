@@ -187,6 +187,7 @@
   transition: 0.2s ease-in-out;
   position: relative;
   border-radius: 4px;
+  display: inline-block;
 
   @include breakpoint(large) {
     width: calc(33.3% - 25px);
@@ -234,6 +235,13 @@
   @include breakpoint(mobile) {
     padding: 2.5em 0 2.5em 1em;
     width: calc(100% - 1em);
+  }
+}
+
+.kommun-right-section{
+
+  @include breakpoint(laptop) {
+    flex-direction: column;
   }
 }
 

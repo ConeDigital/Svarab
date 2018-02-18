@@ -105,10 +105,10 @@
                 <a class="show-contact-modal-link show-other-form-link" href="#">Kontakt</a>
             </div>
             <div class="show-contact-modal show-consultation-form">
-                <?php echo do_shortcode('[contact-form-7 id="179" title="Sidebar Boka Konsultation"]') ; ?>
+                <?php echo do_shortcode('[contact-form-7 id="1106" title="Sidebar Boka Konsultation"]') ; ?>
             </div>
             <div class="show-contact-modal show-other-form">
-                <?php echo do_shortcode('[contact-form-7 id="166" title="Sidebar övrigt"]') ; ?>
+                <?php echo do_shortcode('[contact-form-7 id="1107" title="Sidebar övrigt"]') ; ?>
             </div>
         </div>
     </div>
