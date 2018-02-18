@@ -46,7 +46,7 @@
             <a href="<?php echo esc_url(home_url('/aterforsaljare'))?>">Återförsäljare</a>
             <a href="<?php echo esc_url(home_url('/guider'))?>">Guider & Artiklar</a>
             <a href="<?php echo esc_url(home_url('/aktuellt'))?>">Aktuellt</a>
-            <a href="<?php echo esc_url(home_url('/kommuner'))?>">Aktuellt</a>
+            <a href="<?php echo esc_url(home_url('/kommuner'))?>">Kommuner</a>
             <div class="contact-menu-info">
                 <a href="#"><i class="material-icons">local_phone</i> 08-83 64 22</a>
                 <a href="mailto:info@svarab.se"><i class="material-icons">email</i> info@svarab.se</a>
