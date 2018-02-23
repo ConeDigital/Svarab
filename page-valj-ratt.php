@@ -38,18 +38,26 @@
                     </div>
                     <p>1 hushåll</p>
                 </div>
-                <div class="conf-modal-option conf-choice" data-option="1">
+                <div id="2-hus" class="conf-modal-option conf-choice" data-option="1">
                     <div class="conf-modal-img c-m-i-small-img">
                         <h4>2</h4>
                     </div>
                     <p>2 hushåll</p>
                 </div>
-                <div class="conf-modal-option conf-choice" data-option="2">
+                <div id="3-hus" class="conf-modal-option conf-choice" data-option="2">
                     <div class="conf-modal-img c-m-i-small-img">
                         <h4>3+</h4>
                     </div>
                     <p>3+ hushåll</p>
                 </div>
+                <script>
+                    document.getElementById('3-hus').addEventListener('click', function () {
+                        fbq('trackCustom', 'config3plus');
+                    });
+                    document.getElementById('2-hus').addEventListener('click', function () {
+                        fbq('trackCustom', 'config2');
+                    })
+                </script>
             </div>
         </div>
         <div class="conf-modal-content" id="step3" style="display: none;">
