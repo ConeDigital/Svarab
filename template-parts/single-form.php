@@ -7,7 +7,7 @@
  * @package Skeleton
  */
 ?>
-<section class="single-form" id=“offertfarfragan”>
+<section class="single-form" id="offertforfragan">
     <div class="sub-pages-content">
         <div class="forms">
             <h4>Boka kostnadsfri konsultation</h4>
