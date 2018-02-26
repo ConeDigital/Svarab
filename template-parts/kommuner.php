@@ -23,11 +23,11 @@ if($kommuner->have_posts())
         $kommuner->the_post();
 
         // Check the current letter is the same that the first of the title
-        if($letter != strtoupper(get_field('kommun-name')[0]))
+        if($letter != get_field('kommun-name')[0])
         {
             echo ($letter != '') ? '</div>' : '';
-            $letter = strtoupper(get_field('kommun-name')[0]);
-            echo '<div class="kommun-grid-section"><h4 class="kommun-alphabetic">'.strtoupper(get_field('kommun-name')[0]).'</h4>';
+            $letter = get_field('kommun-name')[0];
+            echo '<div class="kommun-grid-section"><h4 class="kommun-alphabetic">'.mb_substr(get_field('kommun-name'), 0, 1).'</h4>';
         }
 
         $text = '<div class="kommun-grid "><a href="'. get_permalink() .'"></a><div class="background-img kommun-grid-img" style="background-image: url('.  get_the_post_thumbnail_url() .')">';

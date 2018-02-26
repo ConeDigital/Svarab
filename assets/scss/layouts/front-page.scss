@@ -1,5 +1,7 @@
 .front-hero{
   align-items: flex-start;
+  min-height: calc(100vh - 194px);
+
 
   @include breakpoint(tablet) {
     min-height: calc(100vh - 124px);

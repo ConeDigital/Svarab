@@ -506,6 +506,15 @@ header{
     font-weight: bold;
     color: #343E47;
     font-family: $roboto;
+    display: flex;
+    align-items: center;
+
+    i{
+      color: #343E47;
+      font-size: 20px;
+      margin-right: 5px;
+
+    }
   }
 }
 
@@ -517,6 +526,10 @@ header{
   -ms-overflow-style: none;
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  @include breakpoint(mobile) {
+    padding: 1rem 1rem 10rem;
   }
 
   p{
@@ -592,6 +605,10 @@ header{
     background-color: #5FC55F;
     font-weight: bold;
   }
+}
+
+.show-consultation-form{
+  display: block;
 }
 
 

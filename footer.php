@@ -15,7 +15,7 @@
             </div>
             <div class="footer-content">
                 <p>Artiklar</p>
-                <?php $loop = new WP_Query( array( 'post_type' => 'guides', 'posts_per_page' => 4)); ?>
+                <?php $loop = new WP_Query( array( 'post_type' => 'guides', 'posts_per_page' => 4)); ?>v
                 <?php if ( $loop->have_posts() ) : ?>
                     <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                         <div class="footer-links">
@@ -59,5 +59,10 @@
         </div>
     </footer>
     <?php wp_footer(); ?>
+<script>
+    document.addEventListener( 'wpcf7submit', function( event ) {
+        fbq('track', 'Lead');
+    }, false );
+</script>
 </body>
 </html>

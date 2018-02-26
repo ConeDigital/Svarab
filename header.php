@@ -95,14 +95,14 @@
         <div class="contact-modal-header">
             <div class="contact-modal-header-left">
                 <img src="<?php echo esc_url(home_url( '/wp-content/themes/svarab/assets/images/svarabfav.png' ) ); ?>">
-                <p>08-83 64 22</p>
+                <p><i class="material-icons">phone</i> 08-83 64 22</p>
             </div>
             <i class="material-icons">close</i>
         </div>
         <div class="contact-modal-content">
             <p>Välj ett alternativ nedan för att få så bra hjälp som möjligt</p>
             <div class="contact-modal-links">
-                <a class="show-contact-modal-link show-consultation-form-link" href="#">Boka kostandsfri konsultation</a>
+                <a class="show-contact-modal-link show-consultation-form-link link-is-active" href="#">Boka kostandsfri konsultation</a>
                 <a class="show-contact-modal-link show-other-form-link" href="#">Kontakt</a>
             </div>
             <div class="show-contact-modal show-consultation-form">
