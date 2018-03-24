@@ -30,8 +30,8 @@ if($kommuner->have_posts())
             echo '<div class="kommun-grid-section"><h4 class="kommun-alphabetic">'.mb_substr(get_field('kommun-name'), 0, 1).'</h4>';
         }
 
-        $text = '<div class="kommun-grid "><a href="'. get_permalink() .'"></a><div class="background-img kommun-grid-img" style="background-image: url('.  get_the_post_thumbnail_url() .')">';
-        if(!get_the_post_thumbnail_url()) $text .= '<i class="material-icons">photo</i>';
+        $text = '<div class="kommun-grid "><a href="'. get_permalink() .'"></a><div class="background-img kommun-grid-img" style="background-image: url('. get_the_post_thumbnail_url(get_the_ID(),"thumbnail") .')">';
+        if ( ! get_the_post_thumbnail_url() ) $text .= '<i class="material-icons">photo</i>';
         $text .= '</div><h4>'. get_field('kommun-name') .'</h4></div>';
         echo $text;
     }
