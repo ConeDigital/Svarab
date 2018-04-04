@@ -138,7 +138,7 @@
         <div class="conf-modal-content conf-modal-result conf-modal-last conf-modal-book" id="step6" style="display: none;">
             <div class="top-modal"></div>
             <h2>Kostnadsfri konsultation</h2>
-            <p class="no-margin-bottom">Boka en kostnadsfri konsultation med en av våra prominenta återförsäljare. Fyll i dina uppgifter nedan så kontaktar vi dig inom 24 timmar. </p>
+            <p class="no-margin-bottom">Boka en kostnadsfri konsultation med en av våra prominenta återförsäljare. Fyll i dina uppgifter nedan så kontaktar vi dig inom kort.</p>
             <div class="forms sub-pages-content small-form">
             <?php echo do_shortcode('[contact-form-7 id="176" title="Produkt konf. konsultation"]') ; ?></div>
             <div class="bottom-modal"></div>
