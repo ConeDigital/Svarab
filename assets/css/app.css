@@ -2748,13 +2748,13 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
       -ms-flex-align: center;
           align-items: center;
   min-height: 215px;
-  padding: 7em 4em 0 4em; }
+  padding: 60px 4em 90px 4em; }
   @media (max-width: 1000px) {
     .front-second {
-      padding: 5em 2em 0 2em; } }
+      padding: 50px 2em 80px 2em; } }
   @media (max-width: 500px) {
     .front-second {
-      padding: 3em 1em 0 1em; } }
+      padding: 40px 1em 70px 1em; } }
   .front-second p {
     font-family: "Roboto", sans-serif;
     line-height: 26px; }
@@ -2768,7 +2768,15 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
       color: #22445f; }
 
 .front-second-content {
-  width: 100%; }
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .big-question {
   position: relative;
@@ -2782,17 +2790,15 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  @media (max-width: 1000px) {
+  @media (max-width: 1100px) {
     .big-question {
-      max-width: 300px; } }
-  @media (max-width: 800px) {
+      max-width: -webkit-max-content;
+      max-width: -moz-max-content;
+      max-width: max-content;
+      margin-left: 40px; } }
+  @media (max-width: 600px) {
     .big-question {
-      max-width: 100%;
-      margin-top: 2.5em;
-      -webkit-box-pack: start;
-      -webkit-justify-content: flex-start;
-          -ms-flex-pack: start;
-              justify-content: flex-start; } }
+      display: none; } }
   .big-question a {
     position: absolute;
     width: 100%;
@@ -2978,6 +2984,25 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
     line-height: 33px;
     color: #000000;
     position: relative; }
+
+.home-news {
+  margin-top: 85px; }
+  @media (max-width: 900px) {
+    .home-news {
+      margin-top: 45px; } }
+  .home-news .related-post-img {
+    display: none; }
+  .home-news .related-post-grid {
+    margin-top: 15px; }
+
+.review-section {
+  padding: 40px 4em 20px; }
+  @media (max-width: 1000px) {
+    .review-section {
+      padding: 40px 2em 20px 2em; } }
+  @media (max-width: 500px) {
+    .review-section {
+      padding: 30px 1em 20px 1em; } }
 
 footer {
   display: -webkit-box;

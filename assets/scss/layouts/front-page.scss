@@ -110,14 +110,14 @@
 .front-second{
   align-items: center;
   min-height: 215px;
-  padding: 7em 4em 0 4em;
+  padding: 60px 4em 90px 4em;
 
   @include breakpoint(desktop) {
-    padding: 5em 2em 0 2em;
+    padding: 50px 2em 80px 2em;
   }
 
   @include breakpoint(mobile) {
-    padding: 3em 1em 0 1em;
+    padding: 40px 1em 70px 1em;
   }
 
   p{
@@ -140,6 +140,8 @@
 .front-second-content{
   //max-width: 800px;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .big-question{
@@ -149,14 +151,13 @@
   display: flex;
   justify-content: center;
 
-  @include breakpoint(desktop) {
-    max-width: 300px;
+  @include breakpoint(large) {
+    max-width: max-content;
+    margin-left: 40px;
   }
 
-  @include breakpoint(medium) {
-    max-width: 100%;
-    margin-top: 2.5em;
-    justify-content: flex-start;
+  @include breakpoint(small) {
+    display: none;
   }
 
   a{
@@ -349,5 +350,33 @@
     line-height: 33px;
     color: #000000;
     position: relative;
+  }
+}
+
+.home-news{
+  margin-top: 85px;
+
+  @include breakpoint(laptop) {
+    margin-top: 45px;
+  }
+
+  .related-post-img{
+    display: none;
+  }
+
+  .related-post-grid{
+    margin-top: 15px;
+  }
+}
+
+.review-section{
+  padding: 40px 4em 20px ;
+
+  @include breakpoint(desktop) {
+    padding: 40px 2em 20px 2em;
+  }
+
+  @include breakpoint(mobile) {
+    padding: 30px 1em 20px 1em;
   }
 }
