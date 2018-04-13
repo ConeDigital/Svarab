@@ -50,7 +50,25 @@
         <?php get_template_part( 'template-parts/guides', get_post_format() ); ?>
         <div class="home-news">
             <h3>Senaste nyheterna</h3>
-            <?php get_template_part( 'template-parts/news', get_post_format() ); ?>
+            <?php $loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 4)); ?>
+            <div class="related-post-wrapper">
+                <?php if ( $loop->have_posts() ) : ?>
+                    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                        <?php $smallexcerpt = get_the_excerpt(); ?>
+                        <div class="related-post-grid  ">
+                            <a href="<?php echo get_permalink(); ?>"></a>
+                            <?php if ( has_post_thumbnail() ) : ?>
+                                <div class="background-img related-post-img" style="background-image: url('<?php the_post_thumbnail_url('large') ?>')"></div>
+                            <?php endif ; ?>
+                            <div class="related-post-grid-text">
+                                <h4><?php the_title(); ?></h4>
+                                <p><?php echo wp_trim_words( $smallexcerpt , '17' ); ?></p>
+                            </div>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+            </div>
+            <?php wp_reset_query(); ?>
         </div>
     </section>
     <section class="review-section front-second">
