@@ -19,10 +19,10 @@
             <div>
                 <h3><?php the_field('to-conf-title') ; ?></h3>
                 <p><?php the_field('to-conf-content') ; ?></p>
-                <a href="<?php echo esc_url(home_url('/valj-ratt')); ?>">Till produktkonfiguratorn</a>
+                <a href="https://svenskavloppsrening.se/guides/att-tanka-pa-infor-kop-av-enskilt-avlopp/">Att tänka på inför val av nytt enskilt avlopp</a>
             </div>
             <div class="big-question">
-                <a href="<?php echo esc_url(home_url('/valj-ratt')); ?>"></a>
+                <a href="https://svenskavloppsrening.se/guides/att-tanka-pa-infor-kop-av-enskilt-avlopp/"></a>
                 <svg width="138px" height="138px" shape-rendering="geometricPrecision">
                     <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/images/sprite.svg' ) : '' ; ?>#big-question"></use>
                 </svg>

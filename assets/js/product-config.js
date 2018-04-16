@@ -66,7 +66,7 @@ jQuery(document).ready( function($) {
             product = 'Biop';
         }
         else{
-            product = 'Oxyfix och Biop';
+            product = 'Oxyfix eller Biop';
         }
 
         //Change product sugestion
@@ -75,7 +75,7 @@ jQuery(document).ready( function($) {
         //Set CF7 hidden field to product suggestion
         $('.hidden-product').val(product);
 
-        if (product != 'Oxyfix och Biop'){
+        if (product != 'Oxyfix eller Biop'){
             $('.product-config-link').attr('href', $('.product-config-link').data('value') + $('.product-suggestion').html());
         }else{
             $('.product-config-link').attr('href', $('.product-config-link').data('both'));
