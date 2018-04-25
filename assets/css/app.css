@@ -2870,9 +2870,8 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
     font-family: "Roboto", sans-serif;
     line-height: 26px; }
   .front-second a {
-    text-transform: uppercase;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     -webkit-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out; }
     .front-second a:hover {
