@@ -31,6 +31,10 @@
       line-height: 45px;
       margin-bottom: 10px;
     }
+
+    @include breakpoint(small) {
+      font-size: 38px;
+    }
   }
   p{
     font-size: 16px;

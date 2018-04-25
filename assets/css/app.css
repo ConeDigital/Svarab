@@ -1299,6 +1299,9 @@ EFFECTS STYLING
         font-size: 45px;
         line-height: 45px;
         margin-bottom: 10px; } }
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 38px; } }
   .hero p {
     font-size: 16px;
     text-align: center;
@@ -2378,6 +2381,75 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
 
 .q-mark h4 {
   font-size: 60px; }
+
+.cost-form-section {
+  max-width: 600px;
+  margin: 0 auto; }
+  .cost-form-section .cost-inputs {
+    margin: 0 0 70px; }
+    @media (max-width: 600px) {
+      .cost-form-section .cost-inputs {
+        margin: 0 0 40px; } }
+  .cost-form-section .input-div {
+    margin-top: 20px; }
+  .cost-form-section h4 span {
+    display: block;
+    font-weight: normal;
+    margin-top: 8px; }
+  .cost-form-section .wpcf7-form-control-wrap {
+    margin-right: 20px; }
+  .cost-form-section .cost-acceptance {
+    width: auto;
+    margin: 0; }
+  .cost-form-section .wpcf7-acceptance {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0 !important;
+    margin-right: .5em;
+    border: none;
+    position: relative;
+    cursor: pointer; }
+    .cost-form-section .wpcf7-acceptance:before {
+      content: '';
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      background-color: #E6E6E6;
+      border: 1px solid #ccc;
+      left: 0;
+      top: 1px;
+      -webkit-border-radius: 100%;
+      border-radius: 2px; }
+  .cost-form-section .wpcf7-acceptance:checked:before {
+    background-color: #5091BD; }
+  .cost-form-section .accept-input a {
+    padding-left: 33px;
+    padding-top: 17px; }
+    @media (max-width: 600px) {
+      .cost-form-section .accept-input a {
+        padding-top: 0; } }
+  .cost-form-section .wpcf7-submit {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold; }
+    @media (max-width: 600px) {
+      .cost-form-section .wpcf7-submit {
+        width: 100%; } }
+    .cost-form-section .wpcf7-submit:disabled {
+      opacity: 0.4;
+      background: #777777; }
+      .cost-form-section .wpcf7-submit:disabled:hover {
+        background: #777777 !important; }
+  .cost-form-section .radios .wpcf7-list-item-label {
+    padding-left: 38px;
+    padding-top: 3px; }
+  .cost-form-section input[type=radio]:before {
+    width: 30px;
+    height: 30px; }
+  @media (max-width: 600px) {
+    .cost-form-section .radios span.wpcf7-list-item {
+      margin-bottom: 15px; } }
 
 .related-posts {
   padding: 3.5em 1.2em 3.5em 4em;
