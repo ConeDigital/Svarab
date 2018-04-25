@@ -405,7 +405,14 @@
 
 .cost-form-section{
   max-width: 600px;
-  margin: 0 auto;
+  margin: 50px auto;
+  background: #d9edfe;
+  padding: 45px 50px;
+  border: 1px solid #aedbfd;
+
+  @include breakpoint(small) {
+    padding: 30px 20px;
+  }
 
   .cost-inputs{
     margin: 0 0 70px;
@@ -420,6 +427,10 @@
   }
 
   h4{
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: initial;
+
     span{
       display: block;
       font-weight: normal;
@@ -450,7 +461,7 @@
       position: absolute;
       width: 22px;
       height: 22px;
-      background-color: #E6E6E6;
+      background-color: #fff;
       border:1px solid #ccc;
       left: 0;
       top: 1px;
@@ -463,13 +474,14 @@
   }
 
   .accept-input{
+    @include breakpoint(small) {
+      flex-direction: row;
+    }
+
     a{
       padding-left: 33px;
       padding-top: 17px;
 
-      @include breakpoint(small) {
-        padding-top: 0;
-      }
     }
   }
 
@@ -500,6 +512,7 @@
   input[type=radio]:before {
     width: 30px;
     height: 30px;
+    background: white;
   }
 
   .radios span.wpcf7-list-item {
@@ -507,4 +520,48 @@
       margin-bottom: 15px;
     }
   }
+
+  .inputs{
+    @include breakpoint(small) {
+      margin-top: 15px;
+    }
+  }
+
+  [data-class="wpcf7cf_group"] {
+    display: block;
+  }
+}
+
+.cost-form-headline{
+
+  p{
+    margin: 5px 0 0;
+  }
+}
+
+.cost-form{
+  display: none;
+  margin-top: 40px;
+}
+
+.cost-form-button{
+  display: block;
+  max-width: 197px;
+  color: white !important;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.cost-info-inputs{
+
+  .input-div{
+
+    &:last-child{
+      @include breakpoint(small) {
+        margin-top: 0;
+      }
+    }
+  }
+
 }

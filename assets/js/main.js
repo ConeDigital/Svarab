@@ -186,4 +186,14 @@ jQuery(document).ready( function($) {
             $('.show-other-form').fadeIn();
         }, 300);
     });
+
+
+    //Open Cost Form
+    $('.cost-form-button').on('click', function(e) {
+        e.preventDefault();
+        $(this).fadeOut(200);
+        setTimeout(function(){
+            $('.cost-form').slideDown();
+        }, 300);
+    });
 });

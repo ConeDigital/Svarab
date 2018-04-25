@@ -2384,7 +2384,13 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
 
 .cost-form-section {
   max-width: 600px;
-  margin: 0 auto; }
+  margin: 50px auto;
+  background: #d9edfe;
+  padding: 45px 50px;
+  border: 1px solid #aedbfd; }
+  @media (max-width: 600px) {
+    .cost-form-section {
+      padding: 30px 20px; } }
   .cost-form-section .cost-inputs {
     margin: 0 0 70px; }
     @media (max-width: 600px) {
@@ -2392,10 +2398,14 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
         margin: 0 0 40px; } }
   .cost-form-section .input-div {
     margin-top: 20px; }
-  .cost-form-section h4 span {
-    display: block;
-    font-weight: normal;
-    margin-top: 8px; }
+  .cost-form-section h4 {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: initial; }
+    .cost-form-section h4 span {
+      display: block;
+      font-weight: normal;
+      margin-top: 8px; }
   .cost-form-section .wpcf7-form-control-wrap {
     margin-right: 20px; }
   .cost-form-section .cost-acceptance {
@@ -2415,7 +2425,7 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
       position: absolute;
       width: 22px;
       height: 22px;
-      background-color: #E6E6E6;
+      background-color: #fff;
       border: 1px solid #ccc;
       left: 0;
       top: 1px;
@@ -2423,12 +2433,16 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
       border-radius: 2px; }
   .cost-form-section .wpcf7-acceptance:checked:before {
     background-color: #5091BD; }
+  @media (max-width: 600px) {
+    .cost-form-section .accept-input {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
   .cost-form-section .accept-input a {
     padding-left: 33px;
     padding-top: 17px; }
-    @media (max-width: 600px) {
-      .cost-form-section .accept-input a {
-        padding-top: 0; } }
   .cost-form-section .wpcf7-submit {
     font-size: 16px;
     text-transform: uppercase;
@@ -2446,10 +2460,35 @@ div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
     padding-top: 3px; }
   .cost-form-section input[type=radio]:before {
     width: 30px;
-    height: 30px; }
+    height: 30px;
+    background: white; }
   @media (max-width: 600px) {
     .cost-form-section .radios span.wpcf7-list-item {
       margin-bottom: 15px; } }
+  @media (max-width: 600px) {
+    .cost-form-section .inputs {
+      margin-top: 15px; } }
+  .cost-form-section [data-class="wpcf7cf_group"] {
+    display: block; }
+
+.cost-form-headline p {
+  margin: 5px 0 0; }
+
+.cost-form {
+  display: none;
+  margin-top: 40px; }
+
+.cost-form-button {
+  display: block;
+  max-width: 197px;
+  color: white !important;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 30px; }
+
+@media (max-width: 600px) {
+  .cost-info-inputs .input-div:last-child {
+    margin-top: 0; } }
 
 .related-posts {
   padding: 3.5em 1.2em 3.5em 4em;

@@ -5,10 +5,8 @@
     <p><?php the_field('hero-sub') ; ?></p>
 </div>
 
-<section class="row sub-pages-row grey-backr">
-        <div class="sub-pages-content">
-            <?php the_content() ; ?>
-        </div>
+<section class="row sub-pages-row">
+    <?php the_content() ; ?>
 </section>
 
 <?php get_footer() ; ?>
