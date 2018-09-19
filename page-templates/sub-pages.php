@@ -13,7 +13,7 @@
 <div class="sub-pages-menu">
     <i class="material-icons scroll-icon">keyboard_arrow_right</i>
     <div class="blur-menu"></div>
-    <?php if(is_page( 'garantiregistrering' )) : ?>
+    <?php if(is_page( 'garantiregistrering' ) || is_page('underhall')) : ?>
         <?php wp_nav_menu( array( 'theme_location' => 'product', 'menu_class' => 'under-menu' ) ); ?>
     <?php else : ?>
         <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'under-menu' ) ); ?>
